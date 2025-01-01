@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
             <div className="flex space-x-4">
               {/* Facebook */}
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100001766817110&mibextid=JRoKGi"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
 
               {/* LinkedIn */}
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/abhishek-jain-39393255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -72,13 +72,14 @@ export const Footer: React.FC = () => {
 
               {/* WhatsApp */}
               <Link
-                href="https://wa.me/1234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-              >
-                <i className="ri-whatsapp-line text-2xl text-orange-950"></i>
-              </Link>
+  href="https://wa.me/919826070900"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp"
+>
+  <i className="ri-whatsapp-line text-2xl text-orange-950"></i>
+</Link>
+
             </div>
           </div>
         </div>
@@ -87,11 +88,11 @@ export const Footer: React.FC = () => {
         <div className="flex flex-wrap justify-between gap-8 p-3 bg-orange-200 rounded-sm md:py-16 mt-5 font-semibold">
           {/* Left Column */}
           <div className="flex flex-col space-y-3">
-            <Link href="/product" className="block underline text-orange-700">
-              Product Info
+            <Link href="/adhesive-product" className="block underline text-orange-700">
+              Adhesive Products
             </Link>
-            <Link href="/services" className="block underline text-orange-700">
-              Our Services
+            <Link href="/food-product" className="block underline text-orange-700">
+              Food Adhesives
             </Link>
             <Link href="/contact" className="block underline text-orange-700">
               Contact Us
@@ -100,10 +101,10 @@ export const Footer: React.FC = () => {
 
           {/* Right Column */}
           <div className="flex flex-col space-y-3">
-            <Link href="/testimonials" className="block underline text-orange-700">
+            <Link href="/contact" className="block underline text-orange-700">
               Testimonials
             </Link>
-            <Link href="/faqs" className="block underline text-orange-700">
+            <Link href="/contact" className="block underline text-orange-700">
               FAQs
             </Link>
             <Link href="/about" className="block underline text-orange-700">

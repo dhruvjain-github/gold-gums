@@ -58,11 +58,11 @@ const Firms: React.FC<FirmsProps> = ({
             {/* Firm Content */}
             <div className="p-6">
               {/* Image Placeholder (use logo size same as icon) */}
-              <img
+              {/* <img
                 src={firm.logo}
                 alt={`${firm.name} Logo`}
                 className="w-8 h-8 object-contain mb-3" // Size matched with the icon (text-xl)
-              />
+              /> */}
               <h2 className={`text-2xl font-bold ${headingcolor} mb-4`}>
                 {firm.headline}
               </h2>

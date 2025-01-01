@@ -76,8 +76,14 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:text-black text-gray-900 cursor-pointer py-2 font-semibold">
-              <Link href="/product" onClick={() => setIsOpen(false)}>
-                Product
+              <Link href="/adhesive-product" onClick={() => setIsOpen(false)}>
+                Adhesive-Product
+              </Link>
+            </li>
+
+            <li className="hover:text-black text-gray-900 cursor-pointer py-2 font-semibold">
+              <Link href="/food-product" onClick={() => setIsOpen(false)}>
+                Food-Product
               </Link>
             </li>
             <li className="hover:text-black text-gray-900 cursor-pointer py-2 font-semibold">

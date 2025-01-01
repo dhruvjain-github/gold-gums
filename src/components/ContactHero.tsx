@@ -3,6 +3,7 @@ interface ContactHeroProps {
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
+  id?:string
 }
 
 const ContactHero: React.FC<ContactHeroProps> = ({ backgroundcolor, headingcolor, textcolor, boxcolor }) => {

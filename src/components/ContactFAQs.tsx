@@ -12,6 +12,7 @@ interface ContactFAQsProps {
   textcolor: string;
   iconcolor: string;
   boxcolor: string;
+  id?:string
 }
 
 const faqs: FAQ[] = [
@@ -48,6 +49,7 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
   textcolor,
   iconcolor,
   boxcolor,
+  
 }) => {
   const [openFaqs, setOpenFaqs] = useState<boolean[]>(faqs.map(() => true));
 

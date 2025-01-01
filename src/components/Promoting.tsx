@@ -23,7 +23,7 @@ const Promoting = ({ backgroundcolor, headingcolor, textcolor, iconcolor }) => {
           </p>
           <div className="flex gap-4">
             <Link
-              href="/about"
+              href="/adhesive-product"
               className={`md:px-6 md:py-3 py-2 px-3 border border-red-800 font-semibold bg-red-800 text-white transition duration-300`}
             >
               Learn More

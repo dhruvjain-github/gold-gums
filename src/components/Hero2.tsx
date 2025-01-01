@@ -27,9 +27,9 @@ const Hero2 = ({ backgroundcolor, headingcolor, textcolor }) => {
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
-        <div className="relative bg-orange-200 w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+        <div className="relative bg-orange-200 w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-orange-950">
           <Image
-            src="/ggHero1-1.jpeg" // Path to the image in the public folder
+            src="/ggHero2-1-1.jpeg" // Path to the image in the public folder
             alt="Industrial Adhesive Solutions" // Descriptive alt text for accessibility
             layout="fill" // Ensures the image covers the box fully
             objectFit="cover" // Ensures the image covers the box properly
