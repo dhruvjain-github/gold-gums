@@ -24,7 +24,7 @@ const faqs: FAQ[] = [
   {
     question: "What is your shipping policy?",
     answer:
-      "We ship our products across India, ensuring timely delivery to all major cities. Orders are processed within 24 hours, and shipping times may vary based on location. For specific inquiries, please reach out to our customer service team.",
+      "We ship our products across India, ensuring timely delivery to all major cities.Shipping times may vary based on location. For specific inquiries, please reach out to our customer service team.",
   },
   {
     question: "Do you offer samples?",

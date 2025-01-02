@@ -20,15 +20,15 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
       name: "Er. Devendra Jain",
       position: "Founder",
       description:
-        "Devendra Jain has over 45 years of experience in manufacturing and business management.Over two Decades of Experience in Adhesive industry, he has been the driving force behind the brand's success.",
+        "Devendra Jain has over 50 years of experience in manufacturing and business management.Over five Decades of Experience in paper industry, he has been the driving force behind the brand's success.",
       image: "https://via.placeholder.com/150", // Replace with actual image URL
       
     },
     {
       name: "Er. Abhishek jain",
-      position: "CEO",
+      position: "Director",
       description:
-        "Abhishek Jain, an Engineering graduate from 2000, has over two decades of experience in adhesive manufacturing. He has successfully led the brand for the past 25 years, driving innovation and excellence in the industry.",
+        "Abhishek Jain, an Engineering graduate from 2000, has more than two decades of experience in adhesive manufacturing. He has successfully led the brand for the past 25 years, driving innovation and excellence in the industry.",
       image: "https://via.placeholder.com/150", // Replace with actual image URL
       
     },

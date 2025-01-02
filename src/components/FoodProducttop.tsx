@@ -8,7 +8,7 @@ interface ProducttopProps {
   id?: string;
 }
 
-const Producttop: React.FC<ProducttopProps> = ({
+const FoodProducttop: React.FC<ProducttopProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
@@ -22,14 +22,15 @@ const Producttop: React.FC<ProducttopProps> = ({
     >
       <div className={`${boxcolor} rounded-md px-8 py-6 shadow-lg`}>
         <h1 className={`text-3xl font-bold mb-2 text-center ${headingcolor}`}>
-        High-Performance Adhesives for Sustainable Paper Applications
+          Food Products
         </h1>
         <p className={`text-base font-semibold text-center ${textcolor}`}>
-        High-quality adhesives for corrugated boxes, paper cones, and tubes, ensuring strong and durable packaging.
+          Discover our extensive range of high-quality Food-grade and related
+          products tailored for your needs.
         </p>
       </div>
     </section>
   );
 };
 
-export default Producttop;
+export default FoodProducttop;

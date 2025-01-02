@@ -180,10 +180,10 @@ const ContactForm: React.FC<ContactFormProps> = ({
     For Faster Response Please Contact
   </h1>
   <p className="text-sm mb-2 font-semibold text-gray-200">
-    <i className="ri-phone-fill"></i> 982 607 0900
+    <i className="ri-phone-fill"></i> 877 082 2124
   </p>
   <p className="text-sm mb-2 font-semibold text-gray-200">
-    <i className="ri-whatsapp-line"></i> 877 082 2124
+    <i className="ri-whatsapp-line"></i> 982 607 0900 
   </p>
 </div>
 

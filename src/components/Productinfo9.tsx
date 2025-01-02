@@ -7,7 +7,7 @@ interface ProductInfo1Props {
   headingcolor: string;
 }
 
-const Productinfo2: React.FC<ProductInfo1Props> = ({ title, imgLink, headingcolor }) => {
+const Productinfo9: React.FC<ProductInfo1Props> = ({ title, imgLink, headingcolor }) => {
   // Static table headers and data for six columns
   const tableHeaders = [
     "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6"
@@ -45,4 +45,4 @@ const Productinfo2: React.FC<ProductInfo1Props> = ({ title, imgLink, headingcolo
   );
 };
 
-export default Productinfo2;
+export default Productinfo9;

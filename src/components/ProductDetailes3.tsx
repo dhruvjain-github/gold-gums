@@ -1,7 +1,7 @@
 import React from "react";
-import Productinfo4 from "./Productinfo4";
-import Productinfo5 from "./Productinfo5";
-import Productinfo6 from "./Productinfo6";
+import Productinfo7 from "./Productinfo7";
+import Productinfo8 from "./Productinfo8";
+import Productinfo9 from "./Productinfo9.tsx";
 
 interface ProductDetailesProps {
   backgroundcolor: string;
@@ -11,7 +11,7 @@ interface ProductDetailesProps {
   boxcolor: string;
 }
 
-const ProductDetailes2: React.FC<ProductDetailesProps> = ({
+const ProductDetailes3: React.FC<ProductDetailesProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
@@ -19,36 +19,37 @@ const ProductDetailes2: React.FC<ProductDetailesProps> = ({
   boxcolor,
 }) => {
   const productInfo1Data = {
-    title: "P4",
-    description:"P4 description",
+    title:"P7",
+    description:
+      "P7 description",
     imgLink: "https://via.placeholder.com/150",
   };
 
   const productInfo2Data = {
-    title: "P5",
+    title: "P8",
     description:
-      "P5 description",
+      "P8 description",
     imgLink: "https://via.placeholder.com/150",
   };
 
   const productInfo3Data = {
     title:
-      "P6",
+      "P9",
     description:
-      "P6 description",
+      "P9 description",
     imgLink: "https://via.placeholder.com/150",
   };
 
   return (
     <div className={`${backgroundcolor} py-10`}>
-      <Productinfo4
+      <Productinfo7
         title={productInfo1Data.title}
         description={productInfo1Data.description}
         imgLink={productInfo1Data.imgLink}
         headingcolor={headingcolor}
         textcolor={textcolor}
       />
-      <Productinfo5
+      <Productinfo8
         title={productInfo2Data.title}
         description={productInfo2Data.description}
         points={productInfo2Data.points}
@@ -56,7 +57,7 @@ const ProductDetailes2: React.FC<ProductDetailesProps> = ({
         headingcolor={headingcolor}
         textcolor={textcolor}
       />
-      <Productinfo6
+      <Productinfo9
         title={productInfo3Data.title}
         description={productInfo3Data.description}
         imgLink={productInfo3Data.imgLink}
@@ -67,4 +68,4 @@ const ProductDetailes2: React.FC<ProductDetailesProps> = ({
   );
 };
 
-export default ProductDetailes2;
+export default ProductDetailes3;

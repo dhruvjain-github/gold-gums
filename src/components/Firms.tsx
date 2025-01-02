@@ -22,16 +22,16 @@ const Firms: React.FC<FirmsProps> = ({
       logo: "/path-to-goldgums-logo.png", // Replace with the actual path to the logo
       headline: "Gold Gums",
       description:
-        "Central India's leading industrial adhesive manufacturer since 1999, providing innovative bonding solutions.Main manufacturers of all types of adhesives, gum, for carogated box, paper-tube, paper-cone etc.",
+        "Central India's leading industrial adhesive manufacturer since 1999, providing innovative bonding solutions.Manufacturers of all types of paper-to-paper adhesives gum, for corrugated box, paper-tube, paper-cone, dona lamination etc.",
     },
     {
       id: 2,
 
-      name: "Divyakalp",
+      name: "Divy kulp",
       logo: "/path-to-divyakalp-logo.png", // Replace with the actual path to the logo
-      headline: "Divyakalp Enterprises",
+      headline: "Divy-kulp Industry",
       description:
-        "Suppliers of all kinds of Modified starch, Dextrin, yellow Dextrin,white Dextrin,thin Boiling Starch,Starch Paste and HDPE bags etc.",
+        "Suppliers of all kinds of Modified starch, Dextrin, yellow Dextrin,white Dextrin,Malto Dextrin ,Starch Paste,liquid glucose and HDPE bags etc.",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Firms: React.FC<FirmsProps> = ({
       logo: "/path-to-DhruvSales-logo.png", // Replace with the actual path to the logo
       headline: "Dhruv Sales",
       description:
-        "Specialized in food-grade products like corn flour, corn starch, and other liquid glucose etc.",
+        "Specialized in food-grade products like corn flour, corn starch, custurd powder, etc.",
     },
   ];
 
