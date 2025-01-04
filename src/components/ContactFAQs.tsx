@@ -12,7 +12,6 @@ interface ContactFAQsProps {
   textcolor: string;
   iconcolor: string;
   boxcolor: string;
-  id?:string
 }
 
 const faqs: FAQ[] = [
@@ -49,7 +48,6 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
   textcolor,
   iconcolor,
   boxcolor,
-  
 }) => {
   const [openFaqs, setOpenFaqs] = useState<boolean[]>(faqs.map(() => true));
 
@@ -62,7 +60,9 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
   return (
     <div className={`md:py-36 p-4 ${backgroundcolor}`}>
       <div className="max-w-3xl mx-auto">
-        <h1 className={`text-3xl font-bold text-center ${headingcolor}`}>FAQs</h1>
+        <h1 className={`text-3xl font-bold text-center ${headingcolor}`}>
+          FAQs
+        </h1>
         <p className={`mt-4 text-center ${textcolor}`}>
           Find answers to your questions about our products, shipping, and more below.
         </p>
@@ -98,12 +98,19 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
         <h2 className={`text-lg font-semibold ${headingcolor}`}>
           Still have questions?
         </h2>
-        <p className={`mt-2 text-sm font-semibold ${textcolor}`}>We're here to help you!</p>
-        <button
-          className={`mt-4 bg-red-800 text-white px-6 py-2 rounded-md shadow hover:opacity-80`}
+        <p className={`mt-2 text-sm font-semibold ${textcolor}`}>
+          We're here to help you!
+        </p>
+        <div className="mt-4">
+        <a
+          href="https://wa.me/919826070900"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={` bg-red-800 text-white px-6 py-2 rounded-md shadow hover:opacity-80`}
         >
           Contact
-        </button>
+        </a>
+        </div>
       </div>
     </div>
   );

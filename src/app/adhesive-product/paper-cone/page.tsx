@@ -42,20 +42,16 @@ const PaperConeAdhesivesPage = () => {
   // Product Range Data
   const products = [
     {
-      name: "Cold Water Soluble Maize Starch Based Alkaline Adhesive",
+      name: "CONE PASTE COLD : Cold Water Soluble Maize Starch Based Alkaline Adhesive",
       description:
         "This adhesive is ideal for paper cones, offering excellent bonding and fast drying properties. It's formulated for high-speed production and is compatible with various machine types.",
     },
     {
-      name: "Hot Water Soluble Maize Starch Based Adhesive",
+      name: "CONE PASTE HOT : Hot Water Soluble Adhesive",
       description:
         "This product provides high viscosity, excellent adhesion, and works well with natural drying methods, ensuring superior bonding in cone manufacturing.",
     },
-    {
-      name: "Hybrid Resin Mix Adhesive",
-      description:
-        "For enhanced compression values, this adhesive blends maize starch and resin, ensuring strong bonding even at higher production speeds.",
-    },
+    
   ];
 
   return (
@@ -82,7 +78,7 @@ const PaperConeAdhesivesPage = () => {
             description={description}
             productInfo={productInfo}
             advantages={advantages}
-            imageSrc={imageSrc}
+            imageSrc="/PaperTube-Cone.jpeg"
           />
           <ProductRange products={products} styles={styles} />
         </div>

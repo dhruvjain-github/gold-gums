@@ -1,16 +1,15 @@
 "use client";
+
 import React, { useRef } from "react";
-import ProductSideNavbar from "./ProductSideNavbar";
 
 interface ProductOverviewProps {
   header: string;
   description: string;
-  products: { title: string; description: string }[];
+  products: { title: string; description: string; imgLink: string }[];
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
-  imgLink: string;
 }
 
 const Productoverview2: React.FC<ProductOverviewProps> = ({
@@ -21,11 +20,9 @@ const Productoverview2: React.FC<ProductOverviewProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
-  imgLink
 }) => {
   const moreInfoRef = useRef<HTMLDivElement | null>(null);
 
-  // Scroll function
   const handleLearnMoreClick = () => {
     if (moreInfoRef.current) {
       moreInfoRef.current.scrollIntoView({ behavior: "smooth" });
@@ -45,16 +42,13 @@ const Productoverview2: React.FC<ProductOverviewProps> = ({
       {/* Products Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {products.map((product, index) => (
-          <div
-            key={index}
-            className={`p-4 rounded-lg shadow ${boxcolor}`}
-          >
-            <div className="h-40 bg-orange-300 flex items-center justify-center rounded">
-            <img
-                    src={product.imgLink} 
-                    alt={product.title}
-                    className="object-cover h-full w-full rounded"
-                  />
+          <div key={index} className={`p-4 rounded-lg shadow ${boxcolor}`}>
+            <div className="h-40 bg-orange-300 flex items-center justify-center rounded overflow-hidden">
+              <img
+                src={product.imgLink}
+                alt={product.title}
+                className="object-cover h-full w-full"
+              />
             </div>
             <h3 className={`mt-4 text-xl font-bold ${headingcolor}`}>
               {product.title}
@@ -74,8 +68,8 @@ const Productoverview2: React.FC<ProductOverviewProps> = ({
         </button>
       </div>
 
-      {/* More Info Section (Placeholder) */}
-      <div ref={moreInfoRef}></div>
+      {/* Placeholder for more info */}
+      <div ref={moreInfoRef} className="pt-20"></div>
     </div>
   );
 };

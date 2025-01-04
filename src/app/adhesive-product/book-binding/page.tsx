@@ -28,7 +28,7 @@ const BookBindingAdhesivePage: React.FC = () => {
     "Compatible with waterproof resins."
   ];
 
-  const imageSrc = "path/to/your/image.jpg"; // Replace with your actual image path
+  const imageSrc = "https://content.jdmagicbox.com/quickquotes/images_main/fotd-50-ltr-374076396-3wtm5.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"; // Replace with your actual image path
 
   // Table Headers and Data
   const tableHeaders = ["Property", "Value"];
@@ -63,7 +63,7 @@ const BookBindingAdhesivePage: React.FC = () => {
             description={description}
             productInfo={productInfo}
             advantages={advantages}
-            imageSrc={imageSrc}
+            imageSrc="/Book-Binding.jpg"
           />
         </div>
       </div>

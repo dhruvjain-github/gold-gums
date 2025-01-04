@@ -91,10 +91,10 @@ const PaperTubeAdhesivesPage = () => {
             description={description}
             productInfo={productInfo}
             advantages={advantages}
-            imageSrc={imageSrc}
+            imageSrc="/PaperTube-Cone.jpeg"
           />
           {/* Pass the productRangeData to ProductRange */}
-          <ProductRange products={productRangeData} styles={styles} />
+          
         </div>
       </div>
 

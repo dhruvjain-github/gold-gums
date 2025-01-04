@@ -44,11 +44,15 @@ export default function Navbar() {
 
       {/* Contact Button (Visible Only on Larger Screens) */}
       <Link
-        href="/contact"
-        className="hidden md:block px-4 py-2 bg-red-800 text-orange-100 rounded hover:bg-red-900"
-      >
-        Contact
-      </Link>
+  href="https://wa.me/919826070900"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:block px-4 py-2 bg-red-800 text-orange-100 rounded hover:bg-red-900"
+  onClick={() => setIsOpen(false)} // Optionally close the menu
+>
+  Contact
+</Link>
+
 
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center">

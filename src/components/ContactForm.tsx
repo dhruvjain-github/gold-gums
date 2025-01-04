@@ -8,7 +8,7 @@ interface ContactFormProps {
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
-  id?:string
+  id?: string;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({
@@ -35,12 +35,29 @@ const ContactForm: React.FC<ContactFormProps> = ({
     setFormData({ ...formData, [name]: value });
   };
 
+  // New function for successful submission
+  const successfulSubmit = () => {
+    alert("Message sent successfully!");
+
+    // Reset form data to empty
+    setFormData({
+      name: "",
+      email: "",
+      contact: "",
+      whatsapp: "",
+      state: "",
+      city: "",
+      title: "",
+      description: "",
+    });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
       await axios.post("/api/sendMessage", formData);
-      alert("Message sent successfully!");
+      successfulSubmit(); // Call the successful submit function
     } catch (error) {
       console.error("Error sending message:", error);
       alert("Failed to send the message.");
@@ -66,7 +83,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
           We would love to hear from you. Please fill out the form below, and we
           will get back to you as soon as possible.
         </p>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={successfulSubmit}>
           {[
             {
               id: "name",
@@ -125,6 +142,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
                 placeholder={placeholder}
                 required
                 className="w-full mt-2 p-3 border border-red-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-700 bg-orange-100"
+                value={formData[id as keyof typeof formData]}
                 onChange={handleChange}
               />
             </div>
@@ -144,6 +162,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
               rows={4}
               required
               className="w-full mt-2 p-3 border border-red-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-700 bg-orange-100"
+              value={formData.description}
               onChange={handleChange}
             ></textarea>
           </div>
@@ -176,17 +195,16 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
       {/* Faster Response Box */}
       <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/4 mt-8 p-6 bg-orange-900 text-white rounded-lg shadow-lg">
-  <h1 className="text-lg font-bold text-orange-200 mb-4">
-    For Faster Response Please Contact
-  </h1>
-  <p className="text-sm mb-2 font-semibold text-gray-200">
-    <i className="ri-phone-fill"></i> 877 082 2124
-  </p>
-  <p className="text-sm mb-2 font-semibold text-gray-200">
-    <i className="ri-whatsapp-line"></i> 982 607 0900 
-  </p>
-</div>
-
+        <h1 className="text-lg font-bold text-orange-200 mb-4">
+          For Faster Response Please Contact
+        </h1>
+        <p className="text-sm mb-2 font-semibold text-gray-200">
+          <i className="ri-phone-fill"></i> 877 082 2124
+        </p>
+        <p className="text-sm mb-2 font-semibold text-gray-200">
+          <i className="ri-whatsapp-line"></i> 982 607 0900
+        </p>
+      </div>
     </div>
   );
 };

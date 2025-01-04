@@ -4,6 +4,7 @@ import AboutusHero from "@/components/AboutusHero";
 import AboutusJourney from "@/components/AboutusJourney";
 import Firms from "@/components/Firms";
 
+
 // Color constants
 const backgroundcolor = "bg-orange-100";
 const headingcolor = "text-orange-950";

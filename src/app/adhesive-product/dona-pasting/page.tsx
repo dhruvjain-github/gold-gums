@@ -3,7 +3,7 @@ import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
 import Table1 from "../../../components/Table1";
 
-const SemiAutoAdhesivesPage = () => {
+const DonaAdhesivesPage = () => {
   const styles = {
     backgroundcolor: "bg-orange-100",
     headingcolor: "text-orange-950",
@@ -13,19 +13,24 @@ const SemiAutoAdhesivesPage = () => {
   };
 
   const description =
-    "Semi-Automatic Corrugation Adhesives are designed specifically for use in semi-automatic plants. These adhesives provide excellent bonding properties while maintaining the flexibility required for a semi-automated process. Proper adhesion is key to achieving high-quality corrugated boards, even in less automated environments.";
+  "Our Paper Plate (Dona) Gum Powder is specially formulated for bonding materials such as Aluminium Foil, BOPP (Biaxially Oriented Polypropylene), and Polyester Film. We pride ourselves on being a trusted manufacturer, exporter, and supplier of high-quality lamination adhesives in India. Sourced from top-grade components and tested rigorously under strict industry standards, our adhesives are designed to provide exceptional bonding strength while ensuring reliable performance. This product is perfect for businesses requiring high-quality, cost-effective lamination solutions for paper plates, ensuring a strong, durable finish.";
+
 
   const productInfo =
-    "The viscosity of Semi-Automatic Corrugation Adhesive is optimized to ensure smooth application during production. The adhesive is compatible with manual and semi-automatic setups, offering consistent performance across varied conditions. Designed to enhance bonding strength while reducing wastage, it ensures high yield and reliability.";
+  "Our Paper Plate (Dona) Gum Powder is an advanced lamination adhesive designed for seamless bonding of Aluminium Foil, BOPP, and Polyester Films. This product ensures high adhesive strength and exceptional performance, particularly suited for the lamination of paper plates. It is optimized for use in both manual and semi-automatic setups, providing a smooth application process with reduced wastage and consistent results across varied production conditions.";
+
 
   const advantages = [
-    "Optimized viscosity for semi-automatic applications.",
-    "High bonding strength, even in less automated setups.",
-    "Consistent performance under varied production conditions.",
-    "Compatible with waterproof formulations.",
-    "Enhanced productivity and reduced wastage.",
-    "Eco-friendly and safe to use.",
+    "Optimized for bonding Aluminium Foil, BOPP, and Polyester Films, ideal for paper plate lamination.",
+    "Strong bonding strength, ensuring durable and long-lasting adhesion for paper plates.",
+    "Smooth application process, reducing material wastage and enhancing production efficiency.",
+    "Versatile performance across both manual and semi-automatic lamination setups.",
+    "Compatible with waterproof formulations, ensuring consistent quality even in humid conditions.",
+    "Eco-friendly, non-toxic, and safe for use in food packaging applications.",
+    "Enhanced productivity due to reduced application time and improved bonding consistency.",
+    "Affordable pricing without compromising on quality, making it an ideal solution for mass production."
   ];
+  
 
   const imageSrc = "path/to/semi-auto-image.jpg"; // Replace with your actual image path
 
@@ -51,7 +56,7 @@ const SemiAutoAdhesivesPage = () => {
         <div className="flex-1">
           <div className="mb-8">
             <h1 className={`text-3xl md:text-4xl font-bold ${styles.headingcolor}`}>
-              Semi-Automatic Plant Adhesives
+              Paper-Plate Adhesives / Dona Lamination
             </h1>
             <p className={`mt-4 ${styles.textcolor} max-w-2xl font-semibold`}>
               Explore adhesive solutions tailored for semi-automatic corrugated plants.
@@ -62,7 +67,7 @@ const SemiAutoAdhesivesPage = () => {
             description={description}
             productInfo={productInfo}
             advantages={advantages}
-            imageSrc={imageSrc}
+            imageSrc="/Paper-Plate.jpeg"
           />
         </div>
       </div>
@@ -75,4 +80,4 @@ const SemiAutoAdhesivesPage = () => {
   );
 };
 
-export default SemiAutoAdhesivesPage;
+export default DonaAdhesivesPage;
