@@ -18,26 +18,28 @@ const Menu: React.FC<MenuProps> = ({
   boxcolor,
 }) => {
   const products = [
-    "Adhesives for Corrugated Boxes",
-    "Adhesives for Paper Tubes",
-    "Adhesives for Paper Cones",
-    "Adhesives for Book Binding",
-    "Adhesives for Bottle Labeling",
-    "Dextrines: Versatile Solutions",
+    "Manufacturer of Adhesives for Corrugated Boxes (Automatic & Semiautomatic Plants)",
+    "Papcr Tubes",
+    "Paper Cone",
+    "Book Binding",
+    "Bottel Labelling Industries",
+    "Dextrines",
     "Modified Starches",
     "Thin Boiling Starches",
-    "High-Speed Bonding Adhesives",
-    "Packaging Adhesives",
-    "Industrial Grade Adhesives",
-    "Custom Adhesive Solutions",
-    "Specialty Adhesives",
-    "Eco-Friendly Adhesives",
-    "Heat Resistant Adhesives",
-    "Food Grade Adhesives",
-    "Pressure Sensitive Adhesives",
-    "Waterproof Adhesives",
-    "Low-VOC Adhesives",
-    "High-Strength Adhesives",
+    "Starch Glue",
+    "Lye",
+    "Caramel Colors",
+    "Other Starch Based Products",
+    "Arrowroot (Starch)",
+    "Corn Flour",
+    "Custard Powder",
+    "Flour",
+    "Dextrin",
+    "Liquid Glucose",
+    "Glucose Powder",
+    "Gum Paste",
+    "Dona Lamination",
+    "Gum Powder Bags",
   ];
 
   // State to toggle "Show More" functionality
@@ -49,49 +51,41 @@ const Menu: React.FC<MenuProps> = ({
     : products.slice(0, Math.ceil(products.length / 2));
 
   return (
-    <div className={`${backgroundcolor} p-6`}>
+    <div className={`${backgroundcolor} w-full py-5`}>
       {/* Heading */}
-      <h1 className={`text-3xl font-bold mt-10 mb-8 text-center ${headingcolor}`}>
-        All Manufactured Products
+      <h1 className={`text-3xl font-bold text-center ${headingcolor} mb-6`}>
+        Our Manufactured Products
       </h1>
-
-      {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {visibleProducts.map((product, index) => (
-          <div
-            key={index}
-            className={`${boxcolor} rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-200`}
-          >
-            <div className="p-4">
-              <h2 className={`text-base font-semibold leading-tight mb-2 ${headingcolor}`}>
-                {product}
-              </h2>
-              <p className="text-sm font-semibold text-gray-700">
-                High-performance adhesive solutions for diverse industries.
-              </p>
+      <div className={`${boxcolor} p-6 max-w-4xl mx-auto rounded-md shadow-lg`}>
+        {/* Product List with Two Columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {visibleProducts.map((product, index) => (
+            <div key={index} className="text-xl font-medium text-gray-800">
+              <i className="ri-checkbox-blank-circle-fill text-base text-red-800"></i>{" "}
+              {product}
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* Show More / Less Button */}
-      <div className="flex justify-center mt-8">
-        <button
-          onClick={() => setShowAll(!showAll)}
-          className={`px-6 py-3 bg-gray-100 ${iconcolor} rounded hover:border-2 hover:border-red-800 text-sm font-medium shadow-md transition-transform duration-150 transform`}
-        >
-          {showAll ? "Show Less" : "Show More"}
-        </button>
-      </div>
+        {/* Show More / Less Button */}
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className={`px-6 py-2 text-sm font-medium ${iconcolor} bg-gray-200 rounded-md shadow-md transition-transform duration-150 hover:scale-105`}
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        </div>
 
-      {/* Contact Us Button */}
-      <div className="flex justify-center mt-10">
-        <Link
-          href="/contact"
-          className={`px-6 py-3 text-gray-100 rounded-lg bg-red-900 text-sm font-medium shadow-md transition-transform duration-150 transform hover:scale-105`}
-        >
-          Contact Us
-        </Link>
+        {/* Contact Us Button */}
+        <div className="flex justify-center mt-4">
+          <Link
+            href="/contact"
+            className="px-6 py-3 text-sm font-medium text-white bg-red-800 rounded-lg shadow-md hover:scale-105"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
     </div>
   );

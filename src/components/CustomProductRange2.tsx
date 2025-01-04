@@ -1,4 +1,6 @@
 import React from "react";
+import Hot from "../../public/Hot.jpeg";
+import Corrugated from "../../public/Corrugated.jpeg";
 
 const CustomProductRange2 = ({ styles }) => {
   const products = [
@@ -8,55 +10,39 @@ const CustomProductRange2 = ({ styles }) => {
         {
           name: "Corrugation Ready Mix",
           description: `
-          - Appearance: Off white powder
-          - Moisture: 14% max.
-          - Viscosity: 28 ± 10 Seconds (Depending upon the requirement)
-          - Gelatinization Temperature: 63 ± 2°C
-          - Penetration: Normal
-          - Paste Clarity: Opaque
-          - Coverage: Good
-          - Bonding: Superb
-          - Setting: Fastest
-          - Delamination: No
-          - Fermentation: No
-          - Toxicity: No
-          - Shelf Life: Six Months
-          Features:
-          - Ready to use within a few minutes, providing instant usability.
-          - Low viscosity provides high mileage, reduces consumption, and improves pin adhesion.
-          - Consistent quality with a long storage life.
-          - Dries in the required time, enabling faster machine speeds and higher production.
-          - High solids content ensures perfect and superior bonding with no risk of delamination.
-          - Facilitates in-house glue making when required, offering flexibility and reliability.
+            Corrugation Ready Mix is an off-white powder with the following characteristics:
+            Appearance: Off white powder. Moisture: 14% max. Viscosity: 28 ± 10 Seconds 
+            (Depending upon the requirement). Gelatinization Temperature: 63 ± 2°C. 
+            Penetration: Normal. Paste Clarity: Opaque. Coverage: Good. Bonding: Superb. 
+            Setting: Fastest. Delamination: No. Fermentation: No. Toxicity: No. Shelf Life: Six Months.
+            
+            Features: This product is ready to use within a few minutes, providing instant usability. 
+            Its low viscosity offers high mileage, reduces consumption, and improves pin adhesion. 
+            Consistent quality ensures a long storage life. It dries within the required time, 
+            enabling faster machine speeds and higher production. With high solids content, 
+            it ensures perfect and superior bonding with no risk of delamination. Additionally, 
+            it facilitates in-house glue making when required, offering flexibility and reliability.
           `,
-          imageSrc: "/corrugation-readymix.jpeg", // Replace with actual image path
+          imageSrc: Hot.src,
         },
         {
           name: "Corrugation Two Step",
           description: `
-          - Appearance: Off white powder
-          - Moisture: 14% max.
-          - Viscosity: 28 ± 10 Seconds (Depending upon the requirement)
-          - Gelatinization Temperature: 63 ± 2°C
-          - Penetration: Normal
-          - Paste Clarity: Opaque
-          - Coverage: Good
-          - Bonding: Superb
-          - Setting: Fastest
-          - Delamination: No
-          - Fermentation: No
-          - Toxicity: No
-          - Shelf Life: Six Months
-          Features:
-          - Ready to use within minutes, minimizing downtime and enhancing productivity.
-          - Provides high mileage and low consumption, reducing overall operational costs.
-          - Superior bonding with no chance of delamination, ensuring long-lasting performance.
-          - High solids content guarantees perfect bonding and strong adhesion.
-          - No dependency on external sources, allowing in-house glue making whenever needed.
-          - User-adjustable ratio for optimal viscosity, ensuring precise application as per requirement.
-          - While it offers excellent performance, it may settle in the container over time when unused.
+            Corrugation Two Step is an off-white powder with the following specifications:
+            Appearance: Off white powder. Moisture: 14% max. Viscosity: 28 ± 10 Seconds 
+            (Depending upon the requirement). Gelatinization Temperature: 63 ± 2°C. 
+            Penetration: Normal. Paste Clarity: Opaque. Coverage: Good. Bonding: Superb. 
+            Setting: Fastest. Delamination: No. Fermentation: No. Toxicity: No. Shelf Life: Six Months.
+
+            Features: The product is ready to use within minutes, minimizing downtime and enhancing 
+            productivity. It provides high mileage and low consumption, reducing overall operational 
+            costs. With superior bonding and no chance of delamination, it ensures long-lasting 
+            performance. High solids content guarantees perfect bonding and strong adhesion. 
+            This product allows for in-house glue making whenever needed. The user-adjustable ratio 
+            ensures optimal viscosity, allowing precise application as per requirement. However, 
+            it may settle in the container over time when unused.
           `,
-          imageSrc: "/corrugation-two-step.jpeg", // Replace with actual image path
+          imageSrc: Corrugated.src,
         },
       ],
     },
@@ -74,23 +60,28 @@ const CustomProductRange2 = ({ styles }) => {
               <h3 className={`text-2xl font-bold mb-6 ${styles.headingcolor}`}>
                 {product.category}
               </h3>
-              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              <ul className="space-y-6">
                 {product.subProducts.map((subProduct, subIndex) => (
                   <li
                     key={subIndex}
-                    className={`p-4 rounded-md shadow-md ${styles.boxcolor}`}
+                    className={`flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 p-4 rounded-md shadow-md ${styles.boxcolor}`}
                   >
-                    <img
-                      src={subProduct.imageSrc}
-                      alt={subProduct.name}
-                      className="w-full h-48 object-cover rounded-lg"
-                    />
-                    <h4 className={`mt-4 text-xl font-bold ${styles.headingcolor}`}>
-                      {subProduct.name}
-                    </h4>
-                    <p className={`mt-2 font-semibold ${styles.textcolor}`}>
-                      {subProduct.description}
-                    </p>
+                    <div className="flex-1">
+                      <h4 className={`text-xl font-bold ${styles.headingcolor}`}>
+                        {subProduct.name}
+                      </h4>
+                      <p className={`mt-2 text-base font-medium ${styles.textcolor}`}>
+                        {subProduct.description}
+                      </p>
+                    </div>
+                    <div className="flex-shrink-0 w-full md:w-1/3">
+                      {/* Reduced the image width */}
+                      <img
+                        src={subProduct.imageSrc}
+                        alt={subProduct.name}
+                        className="w-full h-[24rem] object-cover rounded-lg"
+                      />
+                    </div>
                   </li>
                 ))}
               </ul>

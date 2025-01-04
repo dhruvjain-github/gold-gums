@@ -130,7 +130,7 @@ const SemiAutoAdhesivesPage = () => {
       </div>
 
       {/* Table Section */}
-      <div className="flex-1 mt-10 md:mt-10">
+      {/* <div className="flex-1 mt-10 md:mt-10">
         <Table3
           styles={{
             tableClassName: "min-w-full border border-gray-400 bg-orange-200",
@@ -139,7 +139,7 @@ const SemiAutoAdhesivesPage = () => {
             cellClassName: "border border-orange-400 px-4 py-2",
           }}
         />
-      </div>
+      </div> */}
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
   {/* Empty div with bg-orange-200 */}

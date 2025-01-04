@@ -4,6 +4,7 @@ import DetailBox from "../../../components/DetailBox";
 import Table1 from "../../../components/Table1";
 import ProductRange from "@/components/ProductRange";
 
+
 const PaperConeAdhesivesPage = () => {
   const styles = {
     backgroundcolor: "bg-orange-100",
@@ -78,16 +79,16 @@ const PaperConeAdhesivesPage = () => {
             description={description}
             productInfo={productInfo}
             advantages={advantages}
-            imageSrc="/PaperTube-Cone.jpeg"
+            imageSrc="/PaperCone.jpeg"
           />
           <ProductRange products={products} styles={styles} />
         </div>
       </div>
 
       {/* Table Section */}
-      <div className="flex-1 mt-10 md:mt-0">
+      {/* <div className="flex-1 mt-10 md:mt-0">
         <Table1 headers={tableHeaders} data={tableData} />
-      </div>
+      </div> */}
     </div>
   );
 };

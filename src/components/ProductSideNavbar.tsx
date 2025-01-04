@@ -34,6 +34,7 @@ const ProductSideNavbar: React.FC<ProductSideNavbarProps> = ({
             { id: "paper-cone", name: "Paper-Cone Adhesive" },
             { id: "dona-pasting", name: "Paper-plate Adhesive Dona Lamination" },
             { id: "book-binding", name: "Book binding Adhesive/Gum paste" },
+            
           ].map((product) => (
             <li key={product.id} className="hover:bg-orange-800 transition-colors duration-200 rounded-md">
               <Link

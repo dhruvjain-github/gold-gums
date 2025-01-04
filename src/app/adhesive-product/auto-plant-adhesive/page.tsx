@@ -89,7 +89,7 @@ const AutoPlantAdhesivePage: React.FC = () => {
         </ul>
       </div>
 
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <Table2
           styles={{
             tableClassName: "min-w-full border border-gray-400 bg-orange-200",
@@ -98,7 +98,7 @@ const AutoPlantAdhesivePage: React.FC = () => {
             cellClassName: "border border-orange-400 px-4 py-2",
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

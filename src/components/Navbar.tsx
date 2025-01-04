@@ -50,7 +50,7 @@ export default function Navbar() {
   className="hidden md:block px-4 py-2 bg-red-800 text-orange-100 rounded hover:bg-red-900"
   onClick={() => setIsOpen(false)} // Optionally close the menu
 >
-  Contact
+  Message
 </Link>
 
 

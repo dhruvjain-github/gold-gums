@@ -73,9 +73,9 @@ const DonaAdhesivesPage = () => {
       </div>
 
       {/* Table Section */}
-      <div className="flex-1 mt-10 md:mt-0">
+      {/* <div className="flex-1 mt-10 md:mt-0">
         <Table1 headers={tableHeaders} data={tableData} />
-      </div>
+      </div> */}
     </div>
   );
 };
