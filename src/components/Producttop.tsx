@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "../../public/Logo.svg";
+import Link from "next/link";
 
 interface ProducttopProps {
   backgroundcolor: string;
@@ -6,6 +8,10 @@ interface ProducttopProps {
   textcolor: string;
   boxcolor: string;
   id?: string;
+  title?: string; // Dynamic title
+  description?: string; // Dynamic description
+  logoAlt?: string; // Dynamic alt text for the logo
+  logoRedirectLink?: string; // Link for the logo
 }
 
 const Producttop: React.FC<ProducttopProps> = ({
@@ -14,18 +20,36 @@ const Producttop: React.FC<ProducttopProps> = ({
   textcolor,
   boxcolor,
   id,
+  title = "High-Performance Adhesives for Sustainable Paper Applications", // Default title
+  description = "High-quality adhesives for corrugated boxes, paper cones, and tubes, ensuring strong and durable packaging.", // Default description
+  logoAlt = "logo", // Default alt text
+  logoRedirectLink = "/", // Default redirect link
 }) => {
   return (
     <section
       id={id}
-      className={`md:py-20 flex items-center justify-center ${backgroundcolor} border-t border-b border-orange-900 md:border-0`}
+      className={`flex flex-col items-center justify-center ${backgroundcolor} py-10 md:py-20 border-t border-b border-orange-900 md:border-0`}
     >
-      <div className={`${boxcolor} rounded-md px-8 py-6 shadow-lg`}>
-        <h1 className={`text-3xl font-bold mb-2 text-center ${headingcolor}`}>
-        High-Performance Adhesives for Sustainable Paper Applications
+      {/* Logo container */}
+      <div className="flex items-center bg-orange-200 mt-8 md:mt-12 text-red-800 px-2 py-2 border-2 border-red-800 rounded mb-5 ">
+        <Link href="/">
+          <img
+            src={Logo.src}
+            alt="logo"
+            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+          />
+        </Link>
+      </div>
+
+      {/* Centered box container */}
+      <div className={`${boxcolor} rounded-md p-6 shadow-lg flex flex-col items-center`}>
+        {/* Heading */}
+        <h1 className={`text-2xl md:text-3xl font-bold mb-4 text-center ${headingcolor}`}>
+          {title}
         </h1>
-        <p className={`text-base font-semibold text-center ${textcolor}`}>
-        High-quality adhesives for corrugated boxes, paper cones, and tubes, ensuring strong and durable packaging.
+        {/* Description */}
+        <p className={`text-base md:text-lg font-medium text-center ${textcolor}`}>
+          {description}
         </p>
       </div>
     </section>

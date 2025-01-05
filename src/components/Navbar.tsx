@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import "remixicon/fonts/remixicon.css";
 
+import Logo from "../../public/Logo.svg"
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,14 +15,16 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-orange-200 md:px-16 md:py-5 border-b-2 border-orange-200">
       {/* Logo Section */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-2">
         <Link href="/">
           <img
-            src="#"
+            src={Logo.src}
             alt="logo"
-            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-lg font-bold"
           />
+          
         </Link>
+        <h1 className="text-red-800 text-3xl font-bold">Gold Gums</h1>
       </div>
 
       {/* Desktop Navigation */}

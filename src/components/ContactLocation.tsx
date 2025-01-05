@@ -119,24 +119,28 @@ const ContactLocation: React.FC<ContactLocationProps> = ({
       </div>
 
       {/* Map Section */}
-      <div className="w-full md:w-1/2">
-        <div
-          className={`bg-gray-200 rounded-lg w-full h-64 md:h-[500px] ${boxcolor} shadow-md`}
-        >
-          {loading && (
-            <div className="flex justify-center items-center w-full h-full bg-white opacity-75">
-              <div className="loader border-4 border-t-4 border-gray-200 border-t-gray-800 w-16 h-16 rounded-full animate-spin"></div>
-            </div>
-          )}
-          <iframe
-            src={mapLink}
-            title="Map Location"
-            className="w-full h-full rounded-lg"
-            frameBorder="0"
-            onLoad={handleMapLoad} // Set loading to false once the map is loaded
-          />
-        </div>
+      {/* Map Section */}
+<div className="w-full md:w-1/2">
+  <div
+    className={`relative bg-gray-200 rounded-lg w-full h-64 md:h-[500px] ${boxcolor} shadow-md`}
+  >
+    {loading && (
+      <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-75 z-10">
+        <div className="loader border-4 border-t-4 border-gray-200 border-t-gray-800 w-12 h-12 rounded-full animate-spin"></div>
       </div>
+    )}
+    <iframe
+      src={mapLink}
+      title="Map Location"
+      className={`w-full h-full rounded-lg transition-opacity duration-300 ${
+        loading ? "opacity-0" : "opacity-100"
+      }`}
+      frameBorder="0"
+      onLoad={handleMapLoad}
+    />
+  </div>
+</div>
+
     </section>
   );
 };

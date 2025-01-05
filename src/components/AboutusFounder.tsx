@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Abhishek_jain from "../../public/Abhishek-Jain.jpeg";
-import Devendra_jain from "../../public/Devendra-Jain.jpeg";
+import Devendra_jain from "../../public/DevendraJain3.jpeg";
+import Devendra_jain1 from "../../public/Devendra-Jain.jpeg"
+
 
 interface AboutusFounderProps {
   backgroundcolor: string;
@@ -23,7 +25,7 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
       position: "Founder",
       description:
         "Devendra Jain has over 50 years of experience in manufacturing and business management. Over five decades of experience in the paper industry, he has been the driving force behind the brand's success.",
-      image: Devendra_jain, // Use imported image here
+      image: Devendra_jain1, // Use imported image here
     },
     {
       name: "Er. Abhishek Jain",

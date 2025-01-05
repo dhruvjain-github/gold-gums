@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useRef } from "react";
-
+import Link from "next/link";
+import Logo from "../../public/Logo.svg";
 interface ProductOverviewProps {
   header: string;
   description: string;
@@ -33,6 +34,16 @@ const Productoverview2: React.FC<ProductOverviewProps> = ({
     <div className={`px-6 md:px-12 py-10 md:py-20 ${backgroundcolor}`}>
       {/* Header Section */}
       <div className="mb-8">
+      <div className="flex items-center text-red-800 py-2  rounded">
+      <Link href="/">
+          <img
+            src={Logo.src}
+            alt="logo"
+            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-3xl font-bold"
+          /> 
+        </Link>
+        {/* <h2 className="text-3xl font-bold">Gold Gums</h2> */}
+      </div>
         <h1 className={`text-4xl font-bold ${headingcolor}`}>{header}</h1>
         <p className={`mt-4 ${textcolor} max-w-2xl font-semibold`}>
           {description}

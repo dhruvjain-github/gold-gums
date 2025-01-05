@@ -34,6 +34,13 @@ export const Footer: React.FC = () => {
                 <i className="ri-phone-fill text-orange-950 font-semibold text-sm"></i>
                 <p className="text-sm font-semibold text-orange-900">8770822124</p>
               </div>
+            
+              <div className="flex items-center gap-2 mt-3 -mb-4">
+                <i className="ri-mail-line text-orange-950 font-semibold text-sm"></i>
+                <p className=" text-xs font-semibold text-orange-600 ">
+                goldgums.sales@gmail.com
+                </p>
+              </div>
 
               <div className="flex items-center gap-2 mt-3">
                 <i className="ri-mail-line text-orange-950 font-semibold text-sm"></i>
@@ -41,7 +48,7 @@ export const Footer: React.FC = () => {
                   abhi_m7@yahoo.com
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 -mt-2">
                 <i className="ri-mail-line text-orange-950 font-semibold text-sm"></i>
                 <p className="text-xs font-semibold text-orange-600 my-1">
                   dkjkin@gmail.com.com

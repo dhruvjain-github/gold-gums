@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image"; // Import the Image component
+import Logo from "../../public/Logo.svg"
 
 import ggHero2 from "../../public/ggHero2-1.jpeg";
 
@@ -10,6 +11,16 @@ const Promoting = ({ backgroundcolor, headingcolor, textcolor, iconcolor }) => {
       {/* Left Section */}
       <div className="grid md:grid-cols-2 gap-8 items-center my-16">
         <div>
+        <div className="flex items-center mt-8 md:mt-20 text-red-800 py-2  rounded">
+      <Link href="/">
+          <img
+            src={Logo.src}
+            alt="logo"
+            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-3xl font-bold"
+          /> 
+        </Link>
+        {/* <h2 className="text-3xl font-bold">Gold Gums</h2> */}
+      </div>
           <h1
             className={`text-3xl md:text-5xl font-bold ${headingcolor} mb-6 leading-tight`}
           >

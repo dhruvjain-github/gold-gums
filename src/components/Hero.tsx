@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Logo from "../../public/Logo.svg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -41,8 +42,19 @@ const Hero = ({ backgroundcolor = "bg-red-800", headingcolor, textcolor }) => {
 
   return (
     <div className={`flex flex-col justify-center items-center ${backgroundcolor} px-4 md:px-12 text-center`}>
+
+      <div className="flex items-center bg-orange-200 mt-8 md:mt-20 text-red-800 px-2 py-2 border-2 border-red-800  rounded">
+      <Link href="/">
+          <img
+            src={Logo.src}
+            alt="logo"
+            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-3xl font-bold"
+          /> 
+        </Link>
+        {/* <h2 className="text-3xl font-bold">Gold Gums</h2> */}
+      </div>
       {/* Heading */}
-      <h1 className={`text-3xl md:text-5xl font-bold ${headingcolor} max-w-2xl mt-8 md:mt-20 md:leading-[1.2]`}>
+      <h1 className={`text-2xl md:text-3xl font-bold ${headingcolor} max-w-2xl mt-3  md:leading-[1.2]`}>
         Industrial Adhesive Lead Since 1999
       </h1>
 
