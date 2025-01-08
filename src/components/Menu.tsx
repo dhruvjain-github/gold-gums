@@ -13,7 +13,6 @@ interface MenuProps {
 const Menu: React.FC<MenuProps> = ({
   backgroundcolor,
   headingcolor,
-  textcolor,
   iconcolor,
   boxcolor,
 }) => {

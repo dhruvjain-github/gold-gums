@@ -2,12 +2,12 @@ import Productoverview from "@/components/Productoverview";
 import Productoverview2 from "@/components/Productoverview2";
 import Producttop from "@/components/Producttop";
 import Menu from "@/components/Menu";
-import CorrugatedPic from "../../../public/Adhesive-Prod-Cardboard.jpg"
-import PaperTubePic from "../../../public/Adhesive-Prod-PaperCone.jpg"
-import PaperPlatePic from "../../../public/Adhesive-Prod-PaperPlate.jpg"
-import DextrinPic from "../../../public/Adhesive-Prod-Dextrin.jpg"
-import ModifiedStarchPic from "../../../public/Adhesive-Prod-ModifiedStarch.jpg"
-import BookBindingPic from "../../../public/Adhesive-Prod-BookBinding.jpg"
+import CorrugatedPic from "../../../public/Adhesive-Prod-Cardboard.jpg";
+import PaperTubePic from "../../../public/Adhesive-Prod-PaperCone.jpg";
+import PaperPlatePic from "../../../public/Adhesive-Prod-PaperPlate.jpg";
+import DextrinPic from "../../../public/Adhesive-Prod-Dextrin.jpg";
+import ModifiedStarchPic from "../../../public/Adhesive-Prod-ModifiedStarch.jpg";
+import BookBindingPic from "../../../public/Adhesive-Prod-BookBinding.jpg";
 
 export default function AdhesiveProductPage() {
   const backgroundcolor = "bg-orange-100";
@@ -26,19 +26,19 @@ export default function AdhesiveProductPage() {
           title: "Adhesives for Corrugated Boxes",
           description:
             "Our adhesives guarantee strong and durable bonds for automatic and semi-automatic corrugated industries.",
-          imgLink: CorrugatedPic.src, // Add image link here
+          imgLink: CorrugatedPic.src,
         },
         {
           title: "Adhesives for Paper Tubes and Paper Cones",
           description:
             "Designed for efficiency, our adhesives enhance paper tube and paper cone with high crushing strength.",
-          imgLink: PaperTubePic.src, // Add image link here
+          imgLink: PaperTubePic.src,
         },
         {
           title: "Adhesives for paper plate and dona lamination",
           description:
             "Adhesives for paper plate and dona lamination, offering strong bonding and durable for food-grade applications.",
-          imgLink: PaperPlatePic.src, // Add image link here
+          imgLink: PaperPlatePic.src,
         },
       ],
     },
@@ -51,19 +51,19 @@ export default function AdhesiveProductPage() {
           title: "Dextrines: Versatile and Reliable Solutions",
           description:
             "Our yellow and white dextrines are perfect for various applications, providing excellent adhesion and stability.",
-          imgLink: DextrinPic.src, // Add image link here
+          imgLink: DextrinPic.src,
         },
         {
           title: "Modified Starches: Enhanced Performance for Industries",
           description:
             "Our modified starches are designed to improve product functionality and efficiency.",
-          imgLink: ModifiedStarchPic.src, // Add image link here
+          imgLink: ModifiedStarchPic.src,
         },
         {
           title: "Book Binding Adhesive, Gum Paste & Lye",
           description:
             "High-quality adhesive gum paste and lye for durable, seamless bookbinding and labelling with a professional finish.",
-          imgLink: BookBindingPic.src, // Add image link here
+          imgLink: BookBindingPic.src,
         },
       ],
     },
@@ -86,7 +86,6 @@ export default function AdhesiveProductPage() {
         headingcolor={headingcolor}
         textcolor={textcolor}
         boxcolor={boxcolor}
-        imgLink={productOverviewData[0].products[0].imgLink} // Passing imgLink of first product in first array
       />
 
       <Productoverview2
@@ -97,7 +96,6 @@ export default function AdhesiveProductPage() {
         headingcolor={headingcolor}
         textcolor={textcolor}
         boxcolor={boxcolor}
-        imgLink={productOverviewData[1].products[0].imgLink} // Passing imgLink of first product in second array
       />
 
       <Menu

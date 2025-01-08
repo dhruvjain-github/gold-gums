@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../public/Logo.svg";
-import Link from "next/link";
+import Image from "next/image";
 
 interface ProducttopProps {
   backgroundcolor: string;
@@ -22,8 +22,6 @@ const Producttop: React.FC<ProducttopProps> = ({
   id,
   title = "High-Performance Adhesives for Sustainable Paper Applications", // Default title
   description = "High-quality adhesives for corrugated boxes, paper cones, and tubes, ensuring strong and durable packaging.", // Default description
-  logoAlt = "logo", // Default alt text
-  logoRedirectLink = "/", // Default redirect link
 }) => {
   return (
     <section
@@ -32,13 +30,15 @@ const Producttop: React.FC<ProducttopProps> = ({
     >
       {/* Logo container */}
       <div className="flex items-center bg-orange-200 mt-8 md:mt-12 text-red-800 px-2 py-2 border-2 border-red-800 rounded mb-5 ">
-        <Link href="/">
-          <img
+        
+          <Image
             src={Logo.src}
             alt="logo"
-            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+            className="h-8 w-8 md:h-10 md:w-10"
+            width={40}
+            height={40}
           />
-        </Link>
+        
       </div>
 
       {/* Centered box container */}

@@ -1,17 +1,24 @@
-"use client";
+"use client"
 import React, { useRef } from "react";
 import ProductSideNavbar from "./ProductSideNavbar";
 import Link from "next/link";
+import Image from "next/image";
+
+// Defining the type for product props.
+interface Product {
+  title: string;
+  description: string;
+  imgLink: string;
+}
 
 interface ProductOverviewProps {
   header: string;
   description: string;
-  products: { title: string; description: string; imgLink: string }[]; // Including imgLink here
+  products: Product[]; // Updated type
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
-  imgLink: string; // Receiving imgLink as a prop
 }
 
 const Productoverview: React.FC<ProductOverviewProps> = ({
@@ -22,12 +29,11 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
-  imgLink, // Accepting imgLink as prop
 }) => {
   const moreInfoRef = useRef<HTMLDivElement | null>(null);
 
   // Scroll function
-  const handleLearnMoreClick = () => {
+  const handleLearnMoreClick = (): void => {
     if (moreInfoRef.current) {
       moreInfoRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -44,6 +50,7 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
             headingcolor={headingcolor}
             textcolor={textcolor}
             boxcolor={boxcolor}
+            iconcolor="text-red-800" // Ensure iconcolor is passed if needed
           />
         </div>
 
@@ -60,10 +67,13 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
             {products.map((product, index) => (
               <div key={index} className={`p-4 rounded-lg shadow ${boxcolor}`}>
                 <div className="h-40 bg-orange-300 flex items-center justify-center rounded">
-                  <img
-                    src={product.imgLink} 
+                  <Image
+                    src={product.imgLink}
                     alt={product.title}
                     className="object-cover h-full w-full rounded"
+                    loading="lazy"
+                    width={300}
+                    height={300}
                   />
                 </div>
                 <h3 className={`mt-4 text-xl font-bold ${headingcolor}`}>{product.title}</h3>
