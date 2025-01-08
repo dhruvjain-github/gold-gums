@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../public/Logo.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ContactHeroProps {
   backgroundcolor: string;
@@ -25,10 +26,12 @@ const ContactHero: React.FC<ContactHeroProps> = ({
       {/* Logo */}
       <div className="flex items-center bg-orange-200 mt-8 md:mt-12 text-red-800 px-2 py-2 border-2 border-red-800 rounded">
         <Link href="/">
-          <img
+          <Image
             src={Logo.src}
             alt="logo"
             className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+            width={40}
+            height={40}
           />
         </Link>
       </div>
@@ -45,7 +48,7 @@ const ContactHero: React.FC<ContactHeroProps> = ({
         <p
           className={`text-base md:text-lg font-medium text-center ${textcolor}`}
         >
-          We're here to assist you with inquiries, support, and product
+          We&apos;re here to assist you with inquiries, support, and product
           information. Reach out today!
         </p>
       </div>

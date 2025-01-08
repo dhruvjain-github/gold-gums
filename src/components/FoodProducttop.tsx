@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../public/Logo.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProducttopProps {
   backgroundcolor: string;
@@ -25,10 +26,12 @@ const FoodProducttop: React.FC<ProducttopProps> = ({
       {/* Logo container */}
       <div className="flex items-center bg-orange-200 mt-8 md:mt-12 text-red-800 px-2 py-2 border-2 border-red-800 rounded mb-5">
         <Link href="/">
-          <img
+          <Image
             src={Logo.src}
             alt="logo"
             className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+            width={40}
+            height={40}
           />
         </Link>
       </div>

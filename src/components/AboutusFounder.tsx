@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Abhishek_jain from "../../public/Abhishek-Jain.jpeg";
-import Devendra_jain from "../../public/DevendraJain3.jpeg";
-import Devendra_jain1 from "../../public/Devendra-Jain.jpeg"
+import Devendra_jain from "../../public/Devendra-Jain.jpeg";
+import Image from "next/image";
 
 
 interface AboutusFounderProps {
@@ -16,7 +15,6 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  iconcolor,
   boxcolor,
 }) => {
   const leaders = [
@@ -25,7 +23,7 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
       position: "Founder",
       description:
         "Devendra Jain has over 50 years of experience in manufacturing and business management. Over five decades of experience in the paper industry, he has been the driving force behind the brand's success.",
-      image: Devendra_jain1, // Use imported image here
+      image: Devendra_jain, // Use imported image here
     },
     {
       name: "Er. Abhishek Jain",
@@ -58,10 +56,12 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
 
             {/* Image Section */}
             <div className="w-48 h-48 bg-gray-300 rounded-lg overflow-hidden mt-6 md:mt-0 md:ml-6">
-              <img
+              <Image
                 src={leader.image.src} // Access `src` for imported images
                 alt={leader.name}
                 className="w-full h-full object-cover"
+                width={200}
+                height={200}
               />
             </div>
           </div>

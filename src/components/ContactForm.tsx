@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 interface ContactFormProps {
   backgroundcolor: string;
@@ -9,6 +9,7 @@ interface ContactFormProps {
   textcolor: string;
   boxcolor: string;
   id?: string;
+  iconcolor?: string;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({
@@ -16,6 +17,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
+  
 }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -52,17 +54,17 @@ const ContactForm: React.FC<ContactFormProps> = ({
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    try {
-      await axios.post("/api/sendMessage", formData);
-      successfulSubmit(); // Call the successful submit function
-    } catch (error) {
-      console.error("Error sending message:", error);
-      alert("Failed to send the message.");
-    }
-  };
+  //   try {
+  //     await axios.post("/api/sendMessage", formData);
+  //     successfulSubmit(); // Call the successful submit function
+  //   } catch (error) {
+  //     console.error("Error sending message:", error);
+  //     alert("Failed to send the message.");
+  //   }
+  // };
 
   return (
     <div

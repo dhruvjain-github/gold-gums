@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ggAbout1 from "../../public/ggAbout1.jpeg";
+import Image from "next/image";
+
 
 interface AboutusJourneyProps {
   backgroundcolor: string;
@@ -28,7 +30,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
           Our Journey Since 1999: A Legacy of Quality
         </h1>
         <p className={`text-lg font-semibold ${textcolor}`}>
-          Founded in 1999, Gold Gums has grown to become Central India's
+          Founded in 1999, Gold Gums has grown to become Central India&apos;s
           foremost industrial adhesive manufacturer. Our commitment to quality
           and innovation has driven us to meet the diverse needs of various
           industries.
@@ -37,7 +39,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
           <li className="flex items-center space-x-3">
             <i className={`ri-checkbox-circle-fill ${iconcolor}`}></i>
             <p className={`${textcolor}`}>
-              Central India's largest Corrugated Adhesive Manufacturer.
+              Central India&apos;s largest Corrugated Adhesive Manufacturer.
             </p>
           </li>
           <li className="flex items-center space-x-3">
@@ -69,10 +71,12 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
         <div
           className={`w-full lg:w-4/5 aspect-w-16 aspect-h-9 ${boxcolor} rounded-lg overflow-hidden`}
         >
-          <img
+          <Image
             src={ggAbout1.src}
             alt="Gold Gums Legacy"
             className="w-full h-full object-cover"
+            width={500}
+            height={500}
           />
         </div>
       </div>

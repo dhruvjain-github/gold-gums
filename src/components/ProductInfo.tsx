@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProductInfoProps {
   title: string;
@@ -56,10 +57,12 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
 
       {/* Image Section */}
       <div className="w-full md:w-80 md:h-80 bg-gray-300 flex items-center justify-center rounded shadow-md border-2 border-orange-900">
-        <img
+        <Image
           src={imgLink}
           alt={title}
           className="w-full h-full object-cover rounded"
+          width={320}
+          height={320}
         />
       </div>
     </div>

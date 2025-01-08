@@ -12,7 +12,6 @@ const Firms: React.FC<FirmsProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  iconcolor,
   boxcolor
 }) => {
   const firmsData = [

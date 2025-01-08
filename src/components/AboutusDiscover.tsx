@@ -1,18 +1,18 @@
 import Link from "next/link";
 import ggAbout2 from "../../public/ggAbout2.jpg"
+import Image from "next/image";
 
 interface AboutusDiscoverProps {
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
-  boxcolor: string;
+  iconcolor?: string;
 }
 
 const AboutusDiscover: React.FC<AboutusDiscoverProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  boxcolor,
 }) => {
   return (
     <section
@@ -36,7 +36,13 @@ const AboutusDiscover: React.FC<AboutusDiscoverProps> = ({
       </div>
       <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center ">
         <div className={`w-full lg:w-4/5 aspect-w-16 aspect-h-9  rounded-lg overflow-hidden bg-orange-200 border-2 border-orange-950 `} >
-          <img src={ggAbout2.src} className="w-full h-full object-cover" />
+          <Image
+          src={ggAbout2.src}
+          className="w-full h-full object-cover"
+          alt="About us"
+          width={500}
+          height={500}
+           />
         </div>
       </div>
     </section>

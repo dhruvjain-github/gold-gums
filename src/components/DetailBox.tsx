@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+
 
 
 interface DetailBoxProps {
@@ -35,7 +37,7 @@ const DetailBox: React.FC<DetailBoxProps> = ({ styles, description, advantages, 
         </ul>
       </div>
       <div className="flex-shrink-0 h-64 w-48 md:h-80 md:w-60 rounded-lg overflow-hidden shadow-lg">
-        <img src={imageSrc} alt="Adhesive Product" className="h-full w-full object-cover" />
+        <Image src={imageSrc} alt="Adhesive Product" className="h-full w-full object-cover" width={400} height={400} />
       </div>
     </div>
   );

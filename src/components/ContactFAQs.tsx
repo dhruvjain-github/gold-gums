@@ -99,7 +99,7 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
           Still have questions?
         </h2>
         <p className={`mt-2 text-sm font-semibold ${textcolor}`}>
-          We're here to help you!
+          We&apos;re here to help you!
         </p>
         <div className="mt-4">
         <a

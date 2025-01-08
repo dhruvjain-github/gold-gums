@@ -4,8 +4,18 @@ import Regular from "../../public/Regular.jpeg";
 import Economy from "../../public/Economy.jpeg";
 import Special from "../../public/Special.jpeg";
 import Hot from "../../public/Hot.jpeg";
+import Image from "next/image";
 
-const CustomProductRange = ({ styles }) => {
+interface CustomProductRangeProps {
+  styles: {
+    backgroundcolor: string;
+    headingcolor: string;
+    textcolor: string;
+    boxcolor: string;
+  };
+}   
+
+const CustomProductRange : React.FC<CustomProductRangeProps>= ({ styles }) => {
   const products = [
     {
       category: "Cold Pesting Gum",
@@ -78,10 +88,12 @@ const CustomProductRange = ({ styles }) => {
                   </div>
                   {/* Image on the right */}
                   <div className="absolute right-0 top-0 lg:relative lg:w-1/2 flex justify-end">
-                    <img
+                    <Image
                       src={product.subProducts[0].imageSrc}
                       alt={product.subProducts[0].name}
                       className="w-80 h-[24rem] object-cover rounded-lg shadow-md"
+                      width={320}
+                      height={480}
                     />
                   </div>
                 </div>
@@ -92,10 +104,12 @@ const CustomProductRange = ({ styles }) => {
                       key={subIndex}
                       className={`p-4 rounded-md shadow-md ${styles.boxcolor}`}
                     >
-                      <img
+                      <Image
                         src={subProduct.imageSrc}
                         alt={subProduct.name}
                         className="w-full h-80 object-cover rounded-lg"
+                        width={320}
+                        height={320}
                       />
                       <h4
                         className={`mt-4 text-xl font-bold ${styles.headingcolor}`}

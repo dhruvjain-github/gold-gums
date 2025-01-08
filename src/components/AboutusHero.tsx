@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "../../public/Logo.svg";
+import Image from "next/image";
 
 interface AboutusHeroProps {
   backgroundcolor: string;
@@ -21,10 +22,12 @@ const AboutusHero: React.FC<AboutusHeroProps> = ({
       {/* Logo container */}
       <div className="flex items-center bg-orange-200 mt-8 md:mt-12 text-red-800 px-2 py-2 border-2 border-red-800 rounded mb-5">
         <Link href="/">
-          <img
+          <Image
             src={Logo.src}
             alt="logo"
             className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+            width={40}
+            height={40}
           />
         </Link>
       </div>
@@ -35,7 +38,7 @@ const AboutusHero: React.FC<AboutusHeroProps> = ({
           Welcome to Gold Gums
         </h1>
         <p className={`text-base font-semibold ${textcolor}`}>
-          Founded in 1999, Gold Gums has established itself as Central India's premier manufacturer of industrial adhesives. Our mission is to deliver innovative and reliable bonding solutions while upholding values of quality and commitment to our customers.
+          Founded in 1999, Gold Gums has established itself as Central India&apos;s premier manufacturer of industrial adhesives. Our mission is to deliver innovative and reliable bonding solutions while upholding values of quality and commitment to our customers.
         </p>
       </div>
     </section>

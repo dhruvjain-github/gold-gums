@@ -135,7 +135,6 @@ const ContactLocation: React.FC<ContactLocationProps> = ({
       className={`w-full h-full rounded-lg transition-opacity duration-300 ${
         loading ? "opacity-0" : "opacity-100"
       }`}
-      frameBorder="0"
       onLoad={handleMapLoad}
     />
   </div>
