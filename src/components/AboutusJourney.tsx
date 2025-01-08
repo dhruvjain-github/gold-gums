@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ggAbout1 from "../../public/ggAbout1.jpeg";
 
 interface AboutusJourneyProps {
@@ -18,7 +19,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col lg:flex-row items-center justify-between ${backgroundcolor} px-6 lg:px-16 py-12  md:py-24 `}
+      className={`flex flex-col lg:flex-row items-center justify-between ${backgroundcolor} px-6 lg:px-16 py-12 md:py-24`}
     >
       {/* Left Section: Text Content */}
       <div className="lg:w-1/2 space-y-6">
@@ -28,7 +29,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
           Our Journey Since 1999: A Legacy of Quality
         </h1>
         <p className={`text-lg font-semibold ${textcolor}`}>
-          Founded in 1999, Gold Gums has grown to become Central India's
+          Founded in 1999, Gold Gums has grown to become Central India&apos;s
           foremost industrial adhesive manufacturer. Our commitment to quality
           and innovation has driven us to meet the diverse needs of various
           industries.
@@ -37,7 +38,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
           <li className="flex items-center space-x-3">
             <i className={`ri-checkbox-circle-fill ${iconcolor}`}></i>
             <p className={`${textcolor}`}>
-              Central India's largest Corrugated Adhesive Manufacturer.
+              Central India&apos;s largest Corrugated Adhesive Manufacturer.
             </p>
           </li>
           <li className="flex items-center space-x-3">
@@ -66,13 +67,14 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
 
       {/* Right Section: Image */}
       <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-        <div
-          className={`w-full lg:w-4/5 aspect-w-16 aspect-h-9 ${boxcolor} rounded-lg overflow-hidden`}
-        >
-          <img
+        <div className={`w-full lg:w-4/5 ${boxcolor} rounded-lg overflow-hidden`}>
+          <Image
             src={ggAbout1.src}
             alt="Gold Gums Legacy"
-            className="w-full h-full object-cover"
+            layout="responsive"
+            width={1600}
+            height={900}
+            className="rounded-lg"
           />
         </div>
       </div>

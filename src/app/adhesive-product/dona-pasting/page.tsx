@@ -1,7 +1,7 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table1 from "../../../components/Table1";
+// import Table1 from "../../../components/Table1";
 
 const DonaAdhesivesPage = () => {
   const styles = {
@@ -32,16 +32,16 @@ const DonaAdhesivesPage = () => {
   ];
   
 
-  const imageSrc = "path/to/semi-auto-image.jpg"; // Replace with your actual image path
+  // const imageSrc = "path/to/semi-auto-image.jpg"; // Replace with your actual image path
 
   // Table Headers and Data
-  const tableHeaders = ["Property", "Value"];
-  const tableData = [
-    { Property: "Viscosity", Value: "Optimized for Semi-Auto Plants" },
-    { Property: "Bonding Strength", Value: "High" },
-    { Property: "Performance Consistency", Value: "Reliable Across Conditions" },
-    { Property: "Compatibility", Value: "Waterproof Formulations" },
-  ];
+  // const tableHeaders = ["Property", "Value"];
+  // const tableData = [
+  //   { Property: "Viscosity", Value: "Optimized for Semi-Auto Plants" },
+  //   { Property: "Bonding Strength", Value: "High" },
+  //   { Property: "Performance Consistency", Value: "Reliable Across Conditions" },
+  //   { Property: "Compatibility", Value: "Waterproof Formulations" },
+  // ];
 
   return (
     <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>

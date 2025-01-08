@@ -1,7 +1,7 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table1 from "../../../components/Table1";
+
 
 const BookBindingAdhesivePage: React.FC = () => {
   const styles = {
@@ -28,16 +28,16 @@ const BookBindingAdhesivePage: React.FC = () => {
     "Compatible with waterproof resins."
   ];
 
-  const imageSrc = "https://content.jdmagicbox.com/quickquotes/images_main/fotd-50-ltr-374076396-3wtm5.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"; // Replace with your actual image path
+  // const imageSrc = "https://content.jdmagicbox.com/quickquotes/images_main/fotd-50-ltr-374076396-3wtm5.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"; 
 
   // Table Headers and Data
-  const tableHeaders = ["Property", "Value"];
-  const tableData = [
-    { Property: "Initial Tack", Value: "High" },
-    { Property: "Viscosity Consistency", Value: "Stable in Mixing Tank" },
-    { Property: "Max Speed", Value: "250 Mtr/Min" },
-    { Property: "Compatibility", Value: "Waterproof Resins" },
-  ];
+  // const tableHeaders = ["Property", "Value"];
+  // const tableData = [
+  //   { Property: "Initial Tack", Value: "High" },
+  //   { Property: "Viscosity Consistency", Value: "Stable in Mixing Tank" },
+  //   { Property: "Max Speed", Value: "250 Mtr/Min" },
+  //   { Property: "Compatibility", Value: "Waterproof Resins" },
+  // ];
 
   return (
     <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>

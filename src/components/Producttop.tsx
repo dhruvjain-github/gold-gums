@@ -22,8 +22,8 @@ const Producttop: React.FC<ProducttopProps> = ({
   id,
   title = "High-Performance Adhesives for Sustainable Paper Applications", // Default title
   description = "High-quality adhesives for corrugated boxes, paper cones, and tubes, ensuring strong and durable packaging.", // Default description
-  logoAlt = "logo", // Default alt text
-  logoRedirectLink = "/", // Default redirect link
+  // logoAlt = "logo", // Default alt text
+  // logoRedirectLink = "/", // Default redirect link
 }) => {
   return (
     <section

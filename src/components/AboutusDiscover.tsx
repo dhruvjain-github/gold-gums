@@ -5,14 +5,16 @@ interface AboutusDiscoverProps {
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
-  boxcolor: string;
+  boxcolor?: string;
+  iconcolor?: string;
 }
 
 const AboutusDiscover: React.FC<AboutusDiscoverProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  boxcolor,
+  // boxcolor,
+  // iconcolor,
 }) => {
   return (
     <section

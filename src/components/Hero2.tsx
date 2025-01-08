@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Logo from "../../public/Logo.svg"
+// import Logo from "../../public/Logo.svg"
 
 const Hero2 = ({ backgroundcolor, headingcolor, textcolor }) => {
   return (

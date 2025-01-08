@@ -6,6 +6,8 @@ interface AboutusHeroProps {
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
+  companyName?: string;
+  description?: string;
 }
 
 const AboutusHero: React.FC<AboutusHeroProps> = ({
@@ -13,6 +15,8 @@ const AboutusHero: React.FC<AboutusHeroProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
+  companyName = "Gold Gums",
+  description = `Founded in 1999, ${companyName} has established itself as Central India&apos;s premier manufacturer of industrial adhesives. Our mission is to deliver innovative and reliable bonding solutions while upholding values of quality and commitment to our customers.`,
 }) => {
   return (
     <section
@@ -23,7 +27,7 @@ const AboutusHero: React.FC<AboutusHeroProps> = ({
         <Link href="/">
           <img
             src={Logo.src}
-            alt="logo"
+            alt="Gold Gums logo"
             className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
           />
         </Link>
@@ -32,14 +36,22 @@ const AboutusHero: React.FC<AboutusHeroProps> = ({
       {/* Centered content container */}
       <div className={`${boxcolor} rounded-md px-8 py-6 shadow-lg max-w-4xl text-center`}>
         <h1 className={`text-3xl font-bold mb-4 ${headingcolor}`}>
-          Welcome to Gold Gums
+          Welcome to {companyName}
         </h1>
         <p className={`text-base font-semibold ${textcolor}`}>
-          Founded in 1999, Gold Gums has established itself as Central India's premier manufacturer of industrial adhesives. Our mission is to deliver innovative and reliable bonding solutions while upholding values of quality and commitment to our customers.
+          {description}
         </p>
       </div>
     </section>
   );
+};
+
+// Default props to prevent rendering issues
+AboutusHero.defaultProps = {
+  backgroundcolor: "bg-white",
+  headingcolor: "text-black",
+  textcolor: "text-gray-700",
+  boxcolor: "bg-gray-100",
 };
 
 export default AboutusHero;

@@ -1,7 +1,7 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table1 from "../../../components/Table1";
+// import Table1 from "../../../components/Table1";
 import ProductRange from "@/components/ProductRange";
 
 
@@ -29,16 +29,16 @@ const PaperConeAdhesivesPage = () => {
     "Compatible with low COBB and high Ply Bond papers.",
   ];
 
-  const imageSrc = "path/to/paper-cone-adhesive-image.jpg"; // Replace with your actual image path
+  // const imageSrc = "path/to/paper-cone-adhesive-image.jpg"; // Replace with your actual image path
 
   // Table Headers and Data
-  const tableHeaders = ["Property", "Value"];
-  const tableData = [
-    { Property: "Bonding Strength", Value: "High" },
-    { Property: "Drying Time", Value: "Quick" },
-    { Property: "Eco-Friendliness", Value: "Environmentally Safe" },
-    { Property: "Compatibility", Value: "Paper Cone Machines" },
-  ];
+  // const tableHeaders = ["Property", "Value"];
+  // const tableData = [
+  //   { Property: "Bonding Strength", Value: "High" },
+  //   { Property: "Drying Time", Value: "Quick" },
+  //   { Property: "Eco-Friendliness", Value: "Environmentally Safe" },
+  //   { Property: "Compatibility", Value: "Paper Cone Machines" },
+  // ];
 
   // Product Range Data
   const products = [

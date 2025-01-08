@@ -47,6 +47,7 @@ export default function AboutPage() {
         headingcolor={headingcolor}
         textcolor={textcolor}
         iconcolor={iconcolor}
+        boxcolor={boxcolor}
       />
     </div>
   );

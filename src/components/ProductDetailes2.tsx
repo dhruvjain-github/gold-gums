@@ -16,8 +16,8 @@ const ProductDetailes2: React.FC<ProductDetailesProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  iconcolor,
-  boxcolor,
+  // iconcolor,
+  // boxcolor,
 }) => {
   const productInfo1Data = {
     title: "Malto Dextrin",

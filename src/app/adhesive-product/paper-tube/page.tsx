@@ -1,8 +1,8 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table1 from "../../../components/Table1";
-import ProductRange from "@/components/ProductRange";
+// import Table1 from "../../../components/Table1";
+// import ProductRange from "@/components/ProductRange";
 
 const PaperTubeAdhesivesPage = () => {
   const styles = {
@@ -27,45 +27,45 @@ const PaperTubeAdhesivesPage = () => {
     "Reliable performance in demanding applications.",
   ];
 
-  const imageSrc = "path/to/paper-tube-adhesive-image.jpg"; // Replace with the actual image path
+  // const imageSrc = "path/to/paper-tube-adhesive-image.jpg"; // Replace with the actual image path
 
   // Table Headers and Data
-  const tableHeaders = ["Property", "Value"];
-  const tableData = [
-    { Property: "Bonding Strength", Value: "High" },
-    { Property: "Curing Time", Value: "Quick" },
-    { Property: "Eco-Friendliness", Value: "Non-Toxic, Safe" },
-    { Property: "Compatibility", Value: "Paper Tube Machines" },
-  ];
+  // const tableHeaders = ["Property", "Value"];
+  // const tableData = [
+  //   { Property: "Bonding Strength", Value: "High" },
+  //   { Property: "Curing Time", Value: "Quick" },
+  //   { Property: "Eco-Friendliness", Value: "Non-Toxic, Safe" },
+  //   { Property: "Compatibility", Value: "Paper Tube Machines" },
+  // ];
 
   // Product range data based on your provided content
-  const productRangeData = [
-    {
-      name: "Traditional Hot Water Soluble Yellow Dextrin-Based Adhesive Powders",
-      description:
-        "Borated fine Yellow Dextrin-based products that offer excellent flow at high viscosity. Can be used for any paper type.",
-    },
-    {
-      name: "Cold Water Soluble Dextrin-Based High pH Adhesive Powders",
-      description:
-        "These adhesives are based on Dextrins and a high dosage of Caustic, offering high tack for suboptimal papers with excellent drying characters.",
-    },
-    {
-      name: "Hybrid Adhesive Powders",
-      description:
-        "Blended Dextrins and PVA formulations, suited for high-speed machines (above 40 m/min) for tube production.",
-    },
-    {
-      name: "Very High Solid (60-70%) Filler-Based Adhesive Powders",
-      description:
-        "Provides good weight to the core, dries instantly, and is ready for dispatch, saving factory space and reducing inventory.",
-    },
-    {
-      name: "Water Resistant Resin & Dextrin-Based Adhesive Powders",
-      description:
-        "Special imported resins for water-resistant bonding. Helps in sub-zero temperature applications, maintaining the compression strength (CS).",
-    },
-  ];
+  // const productRangeData = [
+  //   {
+  //     name: "Traditional Hot Water Soluble Yellow Dextrin-Based Adhesive Powders",
+  //     description:
+  //       "Borated fine Yellow Dextrin-based products that offer excellent flow at high viscosity. Can be used for any paper type.",
+  //   },
+  //   {
+  //     name: "Cold Water Soluble Dextrin-Based High pH Adhesive Powders",
+  //     description:
+  //       "These adhesives are based on Dextrins and a high dosage of Caustic, offering high tack for suboptimal papers with excellent drying characters.",
+  //   },
+  //   {
+  //     name: "Hybrid Adhesive Powders",
+  //     description:
+  //       "Blended Dextrins and PVA formulations, suited for high-speed machines (above 40 m/min) for tube production.",
+  //   },
+  //   {
+  //     name: "Very High Solid (60-70%) Filler-Based Adhesive Powders",
+  //     description:
+  //       "Provides good weight to the core, dries instantly, and is ready for dispatch, saving factory space and reducing inventory.",
+  //   },
+  //   {
+  //     name: "Water Resistant Resin & Dextrin-Based Adhesive Powders",
+  //     description:
+  //       "Special imported resins for water-resistant bonding. Helps in sub-zero temperature applications, maintaining the compression strength (CS).",
+  //   },
+  // ];
 
   return (
     <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>

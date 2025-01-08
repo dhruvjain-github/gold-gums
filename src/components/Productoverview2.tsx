@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import Logo from "../../public/Logo.svg";
+
 interface ProductOverviewProps {
   header: string;
   description: string;
@@ -11,6 +12,7 @@ interface ProductOverviewProps {
   headingcolor: string;
   textcolor: string;
   boxcolor: string;
+  imgLink?: string;
 }
 
 const Productoverview2: React.FC<ProductOverviewProps> = ({
@@ -21,6 +23,7 @@ const Productoverview2: React.FC<ProductOverviewProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
+  // imgLink
 }) => {
   const moreInfoRef = useRef<HTMLDivElement | null>(null);
 

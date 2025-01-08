@@ -1,7 +1,7 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table3 from "@/components/Table3";
+// import Table3 from "@/components/Table3";
 import CustomProductRange from "@/components/CustomProductRange";
 import CustomProductRange2 from "@/components/CustomProductRange2";
 
@@ -17,8 +17,8 @@ const SemiAutoAdhesivesPage = () => {
   const pestingGumDescription =
     "Manual and semi-automatic corrugated board plants often face challenges like lack of drying provisions, sub-optimal mixing, and higher moisture levels. Our adhesive solutions are specifically formulated to perform effectively under these conditions, ensuring superior bonding and faster drying times.";
 
-  const corrugationGumDescription =
-    "Our Corrugation Gum range is designed to handle the unique challenges faced by semi-automatic and manual corrugated board plants. These adhesives offer excellent bonding even in high moisture conditions, ensuring smooth operations and superior board quality.";
+  // const corrugationGumDescription =
+  //   "Our Corrugation Gum range is designed to handle the unique challenges faced by semi-automatic and manual corrugated board plants. These adhesives offer excellent bonding even in high moisture conditions, ensuring smooth operations and superior board quality.";
 
   const productInfo =
     "Gold Gums Pvt. Ltd. provides high-performance adhesive powders tailored to meet the unique requirements of manual and semi-automatic plants. These adhesives are designed to handle challenges such as higher paper moisture, increased COBB values, and insufficient heating, ensuring reliable bonding and optimal board quality.";
@@ -32,60 +32,60 @@ const SemiAutoAdhesivesPage = () => {
     "Prevents glue separation, ensuring consistent performance.",
   ];
 
-  const tableHeaders = ["Product", "Features"];
-  const tableData = [
-    {
-      Product: "Corrugation Powder",
-      Features:
-        "Provides excellent bonding, fast setting, consistent viscosity, and 100% fiber tear. Allows faster processing and efficient energy use.",
-    },
-    {
-      Product: "Pasting Powder",
-      Features:
-        "Offers consistent viscosity, fast setting, and reduced drying time. Ensures reliable operations with minimal wastage.",
-    },
-  ];
+  // const tableHeaders = ["Product", "Features"];
+  // const tableData = [
+  //   {
+  //     Product: "Corrugation Powder",
+  //     Features:
+  //       "Provides excellent bonding, fast setting, consistent viscosity, and 100% fiber tear. Allows faster processing and efficient energy use.",
+  //   },
+  //   {
+  //     Product: "Pasting Powder",
+  //     Features:
+  //       "Offers consistent viscosity, fast setting, and reduced drying time. Ensures reliable operations with minimal wastage.",
+  //   },
+  // ];
 
-  const pestingGumProducts = [
-    {
-      name: "Traditional Hot Water Soluble Yellow Dextrin Based Adhesive Powders",
-      description:
-        "Borated fine Yellow Dextrin based products that provide excellent flow at high viscosity. Suitable for any paper.",
-    },
-    {
-      name: "Cold Water Soluble Dextrin based High pH Adhesive Powders",
-      description:
-        "High tack glues for bad papers offering excellent drying characteristics and better compression strength.",
-    },
-    {
-      name: "Hybrid Adhesive Powders",
-      description:
-        "A blend of Dextrins and PVA, ideal for high-speed machines above 40 mtr/min.",
-    },
-    {
-      name: "Very High Solid Filler Based Adhesive Powders",
-      description:
-        "Instantly drying adhesives that save factory space and reduce lead time.",
-    },
-    {
-      name: "Water Resistant Resin & Dextrin Based Adhesive Powders",
-      description:
-        "Resistant to moisture and designed for sub-zero temperature applications, increasing compression strength.",
-    },
-  ];
+  // const pestingGumProducts = [
+  //   {
+  //     name: "Traditional Hot Water Soluble Yellow Dextrin Based Adhesive Powders",
+  //     description:
+  //       "Borated fine Yellow Dextrin based products that provide excellent flow at high viscosity. Suitable for any paper.",
+  //   },
+  //   {
+  //     name: "Cold Water Soluble Dextrin based High pH Adhesive Powders",
+  //     description:
+  //       "High tack glues for bad papers offering excellent drying characteristics and better compression strength.",
+  //   },
+  //   {
+  //     name: "Hybrid Adhesive Powders",
+  //     description:
+  //       "A blend of Dextrins and PVA, ideal for high-speed machines above 40 mtr/min.",
+  //   },
+  //   {
+  //     name: "Very High Solid Filler Based Adhesive Powders",
+  //     description:
+  //       "Instantly drying adhesives that save factory space and reduce lead time.",
+  //   },
+  //   {
+  //     name: "Water Resistant Resin & Dextrin Based Adhesive Powders",
+  //     description:
+  //       "Resistant to moisture and designed for sub-zero temperature applications, increasing compression strength.",
+  //   },
+  // ];
 
-  const corrugationGumProducts = [
-    {
-      name: "Redimix",
-      description:
-        "A ready-to-use adhesive powder offering excellent bonding and moisture resistance.",
-    },
-    {
-      name: "Two Step",
-      description:
-        "A two-step process adhesive designed for high-speed applications, offering superior strength and quick setting times.",
-    },
-  ];
+  // const corrugationGumProducts = [
+  //   {
+  //     name: "Redimix",
+  //     description:
+  //       "A ready-to-use adhesive powder offering excellent bonding and moisture resistance.",
+  //   },
+  //   {
+  //     name: "Two Step",
+  //     description:
+  //       "A two-step process adhesive designed for high-speed applications, offering superior strength and quick setting times.",
+  //   },
+  // ];
 
   return (
     <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>
@@ -124,7 +124,7 @@ const SemiAutoAdhesivesPage = () => {
               advantages={advantages}
               imageSrc="/Pesting.jpeg"
             />
-            <CustomProductRange styles={styles} products={pestingGumProducts} />
+            <CustomProductRange styles={styles}/>
           </div>
         </div>
       </div>

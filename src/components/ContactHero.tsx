@@ -45,7 +45,7 @@ const ContactHero: React.FC<ContactHeroProps> = ({
         <p
           className={`text-base md:text-lg font-medium text-center ${textcolor}`}
         >
-          We're here to assist you with inquiries, support, and product
+          We&apos;re here to assist you with inquiries, support, and product
           information. Reach out today!
         </p>
       </div>

@@ -22,7 +22,7 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
   headingcolor,
   textcolor,
   boxcolor,
-  imgLink, // Accepting imgLink as prop
+  // imgLink, // Accepting imgLink as prop
 }) => {
   const moreInfoRef = useRef<HTMLDivElement | null>(null);
 

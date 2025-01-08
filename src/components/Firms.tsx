@@ -4,7 +4,7 @@ interface FirmsProps {
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
-  iconcolor: string;
+  iconcolor?: string;
   boxcolor: string;
 }
 
@@ -12,7 +12,7 @@ const Firms: React.FC<FirmsProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  iconcolor,
+  // iconcolor,
   boxcolor
 }) => {
   const firmsData = [

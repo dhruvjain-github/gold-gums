@@ -1,6 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Abhishek_jain from "../../public/Abhishek-Jain.jpeg";
-import Devendra_jain from "../../public/DevendraJain3.jpeg";
+// import Devendra_jain from "../../public/DevendraJain3.jpeg";
 import Devendra_jain1 from "../../public/Devendra-Jain.jpeg"
 
 
@@ -8,7 +8,7 @@ interface AboutusFounderProps {
   backgroundcolor: string;
   headingcolor: string;
   textcolor: string;
-  iconcolor: string;
+  iconcolor?: string;
   boxcolor: string;
 }
 
@@ -16,7 +16,7 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
   backgroundcolor,
   headingcolor,
   textcolor,
-  iconcolor,
+  // iconcolor,
   boxcolor,
 }) => {
   const leaders = [

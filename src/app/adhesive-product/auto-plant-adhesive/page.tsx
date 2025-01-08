@@ -1,7 +1,7 @@
 import React from "react";
 import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
-import Table2 from "@/components/Table2";
+
 
 interface Styles {
   backgroundcolor: string;
