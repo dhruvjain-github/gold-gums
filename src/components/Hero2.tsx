@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Logo from "../../public/Logo.svg"
 
-const Hero2 = ({ backgroundcolor, headingcolor, textcolor }) => {
+type Hero2Props = {
+  backgroundcolor: string;
+  headingcolor: string;
+  textcolor: string;
+};
+
+const Hero2: React.FC<Hero2Props> = ({ backgroundcolor, headingcolor, textcolor }) => {
   return (
     <div className={`flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-12 py-8 ${backgroundcolor}`}>
       {/* Left Section */}

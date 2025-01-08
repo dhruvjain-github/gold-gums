@@ -17,26 +17,24 @@ export default function Home() {
         backgroundcolor={backgroundcolor}
         headingcolor={headingcolor}
         textcolor={textcolor}
-        iconcolor={iconcolor}
       />
       <Hero2
         backgroundcolor={backgroundcolor}
         headingcolor={headingcolor}
         textcolor={textcolor}
-        iconcolor={iconcolor}
       />
       <BestProduct
         backgroundcolor={backgroundcolor}
         boxcolor={boxcolor}
         headingcolor={headingcolor}
         textcolor={textcolor}
-        iconcolor={iconcolor} // Custom icon color for BestProduct
+        iconcolor={iconcolor} 
       />
       <Promoting
         backgroundcolor={backgroundcolor}
         headingcolor={headingcolor}
-        textcolor={textcolor} // Custom text color for Promoting
-        iconcolor={iconcolor} // Custom icon color for Promoting
+        textcolor={textcolor} 
+        iconcolor={iconcolor} 
       />
     </div>
   );

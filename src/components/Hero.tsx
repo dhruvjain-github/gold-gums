@@ -1,66 +1,94 @@
-"use client";
-
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Logo from "../../public/Logo.svg";
+import { Swiper as SwiperInstance } from "swiper/types";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import ggHero1 from "../../public/ggHero1.jpg";
-import ggHero2 from "../../public/ggHero2.jpeg";
+// Define types for props
+type HeroProps = {
+  backgroundcolor?: string;
+  headingcolor?: string;
+  textcolor?: string;
+};
 
-const Hero = ({ backgroundcolor = "bg-red-800", headingcolor, textcolor }) => {
-  const slides = [
+// Define type for slide objects
+type Slide = {
+  image: string;
+  title: string;
+  description: string;
+};
+
+const Hero: React.FC<HeroProps> = ({
+  backgroundcolor = "bg-red-800",
+  headingcolor = "text-white",
+  textcolor = "text-gray-200",
+}) => {
+  // Define the slides array
+  const slides: Slide[] = [
     {
-      image: "https://printpackengrs.com/wp-content/uploads/2024/02/auto_plant.jpg",
+      image: "/CorrugatedHero.jpg",
       title: "Corrugated Adhesive",
-      description: "Our adhesives offer unmatched strength and durability for Corrugated Box, Paper-Tubes, Paper-Cones, Paper-Sacks and many more. We offer a wide range of adhesives including PVA, Starch, Dextrin, and more.",
+      description:
+        "Our adhesives offer unmatched strength and durability for Corrugated Box, Paper-Tubes, Paper-Cones, Paper-Sacks and many more. We offer a wide range of adhesives including PVA, Starch, Dextrin, and more.",
     },
     {
-      image: ggHero2,
+      image: "/ggHero2.jpeg",
       title: "Modified Starch",
-      description: "We are committed to providing high-quality modified starches for various industrial applications. Some of our products include Dextrin, yellow Dextrin, white Dextrin, Pasting Gum, and more.",
+      description:
+        "We are committed to providing high-quality modified starches for various industrial applications. Some of our products include Dextrin, yellow Dextrin, white Dextrin, Pasting Gum, and more.",
     },
     {
-      image: "https://www.coresmith.net/wp-content/uploads/2022/09/papercones.jpg",
+      image: "/PaperConeHero.jpg",
       title: "Paper-Cone/Tube Adhesive",
-      description: "Our Paper-Cone/Tube Adhesive offers strong and reliable bonding for paper-based packaging. Ideal for creating durable cones and tubes, it ensures seamless performance in various industrial applications, from packaging to labeling, providing excellent adhesion and stability.",
+      description:
+        "Our Paper-Cone/Tube Adhesive offers strong and reliable bonding for paper-based packaging. Ideal for creating durable cones and tubes, it ensures seamless performance in various industrial applications, from packaging to labeling, providing excellent adhesion and stability.",
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper: SwiperInstance) => {
     setCurrentSlide(swiper.activeIndex);
   };
 
   return (
-    <div className={`flex flex-col justify-center items-center ${backgroundcolor} px-4 md:px-12 text-center`}>
-
-      <div className="flex items-center bg-orange-200 mt-8 md:mt-20 text-red-800 px-2 py-2 border-2 border-red-800  rounded">
-      <Link href="/">
-          <img
-            src={Logo.src}
+    <div
+      className={`flex flex-col justify-center items-center ${backgroundcolor} px-4 md:px-12 text-center`}
+    >
+      {/* Logo */}
+      <div className="flex items-center bg-orange-200 mt-8 md:mt-20 text-red-800 px-2 py-2 border-2 border-red-800 rounded">
+        <Link href="/">
+          <Image
+            src="/Logo.svg"
             alt="logo"
-            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-3xl font-bold"
-          /> 
+            width={40}
+            height={40}
+            className="cursor-pointer"
+          />
         </Link>
-        {/* <h2 className="text-3xl font-bold">Gold Gums</h2> */}
       </div>
+
       {/* Heading */}
-      <h1 className={`text-2xl md:text-3xl font-bold ${headingcolor} max-w-2xl mt-3  md:leading-[1.2]`}>
+      <h1
+        className={`text-2xl md:text-3xl font-bold ${headingcolor} max-w-2xl mt-3 md:leading-[1.2]`}
+      >
         Industrial Adhesive Lead Since 1999
       </h1>
 
       {/* Description */}
-      <p className={`text-sm md:text-lg font-semibold ${textcolor} max-w-xl mt-4 md:mt-6`}>
-        As Central India's foremost industrial adhesive manufacturer, Gold Gums has been setting the standard for quality and reliability since 1999. Our innovative adhesive solutions are designed to meet the diverse needs of various industries, ensuring your operations run smoothly.
+      <p
+        className={`text-sm md:text-lg font-semibold ${textcolor} max-w-xl mt-4 md:mt-6`}
+      >
+        As Central India&apos;s foremost industrial adhesive manufacturer, Gold
+        Gums has been setting the standard for quality and reliability since
+        1999. Our innovative adhesive solutions are designed to meet the diverse
+        needs of various industries, ensuring your operations run smoothly.
       </p>
 
       {/* Contact Button */}
@@ -80,30 +108,22 @@ const Hero = ({ backgroundcolor = "bg-red-800", headingcolor, textcolor }) => {
             prevEl: ".swiper-button-prev",
           }}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 5000 }} // Slide every 5 seconds
+          autoplay={{ delay: 5000 }}
           loop
           className="rounded-lg shadow-lg"
-          onSlideChange={handleSlideChange}
+          onSlideChange={(swiper) => handleSlideChange(swiper)}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
-                {typeof slide.image === "string" ? (
-                  <img
-                    src={slide.image}
-                    alt={slide.title}
-                    className="w-full h-full object-cover rounded-lg"
-                    style={{ aspectRatio: "16 / 9" }}
-                  />
-                ) : (
-                  <Image
-                    src={slide.image}
-                    alt={slide.title}
-                    className="w-full h-full object-cover rounded-lg"
-                    priority
-                    style={{ aspectRatio: "16 / 9" }}
-                  />
-                )}
+                <Image
+                  src={slide.image}
+                  alt={slide.title}
+                  priority
+                  width={800}
+                  height={450}
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
             </SwiperSlide>
           ))}
@@ -141,7 +161,7 @@ const Hero = ({ backgroundcolor = "bg-red-800", headingcolor, textcolor }) => {
         <h2 className="text-xl md:text-2xl font-bold text-red-800">
           {slides[currentSlide]?.title}
         </h2>
-        <div className="bg-orange-200 text-orange-950 text-sm md:text-lg font-medium mt-4 px-4 font-semibold py-2 rounded-md shadow-md max-w-[80%] md:max-w-[50%]">
+        <div className="bg-orange-200 text-orange-950 text-sm md:text-lg mt-4 px-4 font-semibold py-2 rounded-md shadow-md max-w-[80%] md:max-w-[50%]">
           {slides[currentSlide]?.description}
         </div>
       </div>

@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "target": "ES2020", // Updated to a more modern target for better optimization
+    "lib": ["dom", "dom.iterable", "esnext"], // Keeps browser and modern features
+    "allowJs": true, // Allows JavaScript files in the project
+    "skipLibCheck": true, // Avoids type-checking dependencies
+    "strict": true, // Enables strict type-checking for better reliability
+    "noEmit": true, // Prevents emitting JS files
+    "esModuleInterop": true, // Enables ES Module compatibility
+    "module": "esnext", // Uses ESNext modules
+    "moduleResolution": "node", // Ensures Node.js-style module resolution
+    "resolveJsonModule": true, // Allows importing JSON files
+    "isolatedModules": true, // Enforces per-file transpilation
+    "jsx": "react-jsx", // Uses the modern JSX runtime for React
+    "incremental": true, // Speeds up builds by only recompiling changed files
+    "baseUrl": ".", // Sets base directory for module resolution
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"] // Enables aliasing for `@` to point to the `src` folder
+    },
+    "types": ["node", "react", "react-dom"] // Ensures proper typings for Node.js and React
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts", // Ensures Next.js environment variables are included
+    "**/*.ts", // Includes all TypeScript files
+    "**/*.tsx", // Includes all React TypeScript files
+    ".next/types/**/*.ts" // Includes Next.js-generated types
+  ],
+  "exclude": ["node_modules"] // Excludes dependencies from type-checking
 }

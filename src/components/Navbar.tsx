@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import "remixicon/fonts/remixicon.css";
-
+import Image from "next/image";
 import Logo from "../../public/Logo.svg"
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,13 @@ export default function Navbar() {
       {/* Logo Section */}
       <div className="flex items-center gap-2">
       <Link href="/" className="flex items-center space-x-2">
-  <img
+  <Image
     src={Logo.src}
     alt="logo"
-    className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+    className="cursor-pointer"
+    width={40}
+    height={40}
+    priority
   />
   <h1 className="text-red-800 text-3xl font-bold">Gold Gums</h1>
 </Link>

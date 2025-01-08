@@ -2,23 +2,39 @@
 import React from "react";
 import Link from "next/link";
 
-const BestProduct = ({
+type Product = {
+  iconClass: string;
+  title: string;
+  description: string;
+  link: string;
+};
+
+type BestProductProps = {
+  backgroundcolor: string;
+  boxcolor: string;
+  headingcolor: string;
+  textcolor: string;
+  iconcolor: string;
+};
+
+const BestProduct: React.FC<BestProductProps> = ({
   backgroundcolor,
   boxcolor,
   headingcolor,
   textcolor,
   iconcolor,
 }) => {
-  // If you are closing the menu, define the setIsOpen function here
+  // Placeholder function for optional menu close behavior
   const setIsOpen = () => {
-    // Implement the function to close the menu (if applicable)
+    console.log("Menu closed (if applicable).");
   };
 
-  const products = [
+  const products: Product[] = [
     {
       iconClass: "ri-box-3-fill",
       title: "Adhesives for Corrugated Boxes and More",
-      description: "Our adhesives are perfect for both automatic and semiautomatic plants.",
+      description:
+        "Our adhesives are perfect for both automatic and semiautomatic plants.",
       link: "/adhesive-product",
     },
     {
@@ -31,7 +47,8 @@ const BestProduct = ({
     {
       iconClass: "ri-sticky-note-2-fill",
       title: "Dextrines and Modified Starches for Versatile Applications",
-      description: "Our range includes dextrines and modified starches for various industrial uses.",
+      description:
+        "Our range includes dextrines and modified starches for various industrial uses.",
       link: "/adhesive-product",
     },
     {
@@ -52,16 +69,18 @@ const BestProduct = ({
           </h1>
           <p className={`${textcolor} mb-8 leading-relaxed font-semibold`}>
             At Gold Gums, we take pride in offering a diverse range of adhesive
-            solutions specifically designed for the unique needs of various industries. Our products
-            include high-performance corrugated adhesives, modified starch, liquid glucose, and specialized
-            bags, among many others. These adhesives are engineered to deliver superior bonding strength
-            for applications such as packaging, labeling, and more, ensuring reliable and durable results across
+            solutions specifically designed for the unique needs of various
+            industries. Our products include high-performance corrugated
+            adhesives, modified starch, liquid glucose, and specialized bags,
+            among many others. These adhesives are engineered to deliver
+            superior bonding strength for applications such as packaging,
+            labeling, and more, ensuring reliable and durable results across
             multiple sectors.
           </p>
           <div className="flex gap-4">
             <Link
               href="/adhesive-product"
-              className={`md:px-6 md:py-3 py-2 px-3 border border-red-800 font-semibold bg-red-800 text-white transition duration-300`}
+              className="md:px-6 md:py-3 py-2 px-3 border border-red-800 font-semibold bg-red-800 text-white transition duration-300"
             >
               Learn More
             </Link>
@@ -70,7 +89,7 @@ const BestProduct = ({
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-red-800 font-semibold"
-              onClick={setIsOpen} // Optional: Close the menu if needed
+              onClick={setIsOpen}
             >
               Contact
               <span className="ml-2">&rarr;</span>
@@ -90,7 +109,9 @@ const BestProduct = ({
                 <h3 className={`text-lg font-semibold ${headingcolor}`}>
                   {product.title}
                 </h3>
-                <p className={`text-sm ${textcolor} mt-2`}>{product.description}</p>
+                <p className={`text-sm ${textcolor} mt-2`}>
+                  {product.description}
+                </p>
               </div>
             </Link>
           ))}
