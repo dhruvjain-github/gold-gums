@@ -3,9 +3,23 @@ import ProductSideNavbar from "../../../components/ProductSideNavbar";
 import DetailBox from "../../../components/DetailBox";
 import ProductRange from "@/components/ProductRange";
 
+// Define styles interface
+interface Styles {
+  backgroundcolor: string;
+  headingcolor: string;
+  textcolor: string;
+  iconcolor: string;
+  boxcolor: string;
+}
 
-const PaperConeAdhesivesPage = () => {
-  const styles = {
+// Define product interface
+interface Product {
+  name: string;
+  description: string;
+}
+
+const PaperConeAdhesivesPage: React.FC = () => {
+  const styles: Styles = {
     backgroundcolor: "bg-orange-100",
     headingcolor: "text-orange-950",
     textcolor: "text-gray-800",
@@ -28,19 +42,7 @@ const PaperConeAdhesivesPage = () => {
     "Compatible with low COBB and high Ply Bond papers.",
   ];
 
-  // const imageSrc = "path/to/paper-cone-adhesive-image.jpg"; // Replace with your actual image path
-
-  // Table Headers and Data
-  // const tableHeaders = ["Property", "Value"];
-  // const tableData = [
-  //   { Property: "Bonding Strength", Value: "High" },
-  //   { Property: "Drying Time", Value: "Quick" },
-  //   { Property: "Eco-Friendliness", Value: "Environmentally Safe" },
-  //   { Property: "Compatibility", Value: "Paper Cone Machines" },
-  // ];
-
-  // Product Range Data
-  const products = [
+  const products: Product[] = [
     {
       name: "CONE PASTE COLD : Cold Water Soluble Maize Starch Based Alkaline Adhesive",
       description:
@@ -51,19 +53,15 @@ const PaperConeAdhesivesPage = () => {
       description:
         "This product provides high viscosity, excellent adhesion, and works well with natural drying methods, ensuring superior bonding in cone manufacturing.",
     },
-    
   ];
 
   return (
     <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>
-      {/* Flex Container for Sidebar and Content */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-        {/* Sidebar */}
         <div className="md:w-auto">
           <ProductSideNavbar {...styles} />
         </div>
 
-        {/* Main Content */}
         <div className="flex-1">
           <div className="mb-8">
             <h1 className={`text-3xl md:text-4xl font-bold ${styles.headingcolor}`}>
@@ -83,11 +81,6 @@ const PaperConeAdhesivesPage = () => {
           <ProductRange products={products} styles={styles} />
         </div>
       </div>
-
-      {/* Table Section */}
-      {/* <div className="flex-1 mt-10 md:mt-0">
-        <Table1 headers={tableHeaders} data={tableData} />
-      </div> */}
     </div>
   );
 };

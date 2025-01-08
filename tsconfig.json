@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2020", // Updated to a more modern target for better optimization
-    "lib": ["dom", "dom.iterable", "esnext"], // Keeps browser and modern features
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Keeps browser and modern features
     "allowJs": true, // Allows JavaScript files in the project
     "skipLibCheck": true, // Avoids type-checking dependencies
     "strict": true, // Enables strict type-checking for better reliability
@@ -11,13 +15,25 @@
     "moduleResolution": "node", // Ensures Node.js-style module resolution
     "resolveJsonModule": true, // Allows importing JSON files
     "isolatedModules": true, // Enforces per-file transpilation
-    "jsx": "react-jsx", // Uses the modern JSX runtime for React
+    "jsx": "preserve", // Uses the modern JSX runtime for React
     "incremental": true, // Speeds up builds by only recompiling changed files
     "baseUrl": ".", // Sets base directory for module resolution
     "paths": {
-      "@/*": ["./src/*"] // Enables aliasing for `@` to point to the `src` folder
+      "@/*": [
+        "./src/*"
+      ] // Enables aliasing for `@` to point to the `src` folder
     },
-    "types": ["node", "react", "react-dom"] // Ensures proper typings for Node.js and React
+    "types": [
+      "node",
+      "react",
+      "react-dom"
+    ] // Ensures proper typings for Node.js and React
+    ,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts", // Ensures Next.js environment variables are included
@@ -25,5 +41,7 @@
     "**/*.tsx", // Includes all React TypeScript files
     ".next/types/**/*.ts" // Includes Next.js-generated types
   ],
-  "exclude": ["node_modules"] // Excludes dependencies from type-checking
+  "exclude": [
+    "node_modules"
+  ] // Excludes dependencies from type-checking
 }

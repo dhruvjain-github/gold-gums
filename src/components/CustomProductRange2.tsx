@@ -1,8 +1,18 @@
 import React from "react";
 import Hot from "../../public/Hot.jpeg";
 import Corrugated from "../../public/Corrugated.jpeg";
+import Image from "next/image";
 
-const CustomProductRange2 = ({ styles }) => {
+interface CustomProductRangeProps {
+  styles: {
+    backgroundcolor: string;
+    headingcolor: string;
+    textcolor: string;
+    boxcolor: string;
+  };
+} 
+
+const CustomProductRange2:React.FC<CustomProductRangeProps> = ({ styles }) => {
   const products = [
     {
       category: "Corrugation Adhesives",
@@ -76,10 +86,12 @@ const CustomProductRange2 = ({ styles }) => {
                     </div>
                     <div className="flex-shrink-0 w-full md:w-1/3">
                       {/* Reduced the image width */}
-                      <img
+                      <Image
                         src={subProduct.imageSrc}
                         alt={subProduct.name}
                         className="w-full h-[24rem] object-cover rounded-lg"
+                        width={320}
+                        height={320}
                       />
                     </div>
                   </li>
