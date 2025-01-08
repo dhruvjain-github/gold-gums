@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
             <div className="flex space-x-4">
               {/* Facebook */}
               <Link
-                href="https://www.facebook.com/profile.php?id=100001766817110&mibextid=JRoKGi"
+                href="https://www.facebook.com/profile.php?id=100001766817110"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
