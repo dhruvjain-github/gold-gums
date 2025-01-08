@@ -124,7 +124,7 @@ const SemiAutoAdhesivesPage = () => {
               advantages={advantages}
               imageSrc="/Pesting.jpeg"
             />
-            <CustomProductRange styles={styles} products={pestingGumProducts} />
+            <CustomProductRange styles={styles}  />
           </div>
         </div>
       </div>

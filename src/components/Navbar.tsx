@@ -16,15 +16,16 @@ export default function Navbar() {
     <nav className="flex justify-between items-center px-6 py-4 bg-orange-200 md:px-16 md:py-5 border-b-2 border-orange-200">
       {/* Logo Section */}
       <div className="flex items-center gap-2">
-        <Link href="/">
-          <img
-            src={Logo.src}
-            alt="logo"
-            className="h-8 w-8 md:h-10 md:w-10 cursor-pointer text-lg font-bold"
-          />
-          
-        </Link>
-        <h1 className="text-red-800 text-3xl font-bold">Gold Gums</h1>
+      <Link href="/" className="flex items-center space-x-2">
+  <img
+    src={Logo.src}
+    alt="logo"
+    className="h-8 w-8 md:h-10 md:w-10 cursor-pointer"
+  />
+  <h1 className="text-red-800 text-3xl font-bold">Gold Gums</h1>
+</Link>
+
+        
       </div>
 
       {/* Desktop Navigation */}
