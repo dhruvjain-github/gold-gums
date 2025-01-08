@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({
         "We are committed to providing high-quality modified starches for various industrial applications. Some of our products include Dextrin, yellow Dextrin, white Dextrin, Pasting Gum, and more.",
     },
     {
-      image: "/PaperConeHero.jpeg",
+      image: "/PaperConeSlider.jpeg",
       title: "Paper-Cone/Tube Adhesive",
       description:
         "Our Paper-Cone/Tube Adhesive offers strong and reliable bonding for paper-based packaging. Ideal for creating durable cones and tubes, it ensures seamless performance in various industrial applications, from packaging to labeling, providing excellent adhesion and stability.",
