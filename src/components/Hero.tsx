@@ -43,6 +43,7 @@ const Hero: React.FC<HeroProps> = ({
       description:
         "We are committed to providing high-quality modified starches for various industrial applications. Some of our products include Dextrin, yellow Dextrin, white Dextrin, Pasting Gum, and more.",
     },
+    
     {
       image: "/PaperConeSlider.jpeg",
       title: "Paper-Cone/Tube Adhesive",
