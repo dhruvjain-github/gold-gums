@@ -85,7 +85,7 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
           {/* Learn More Button */}
           <div className="my-10 flex justify-start">
             <Link
-              href={"/adhesive-product/corrugated-adhesives"}
+              href={"/adhesive-product/auto-plant-adhesive"}
               className="text-sm font-medium text-white bg-red-800 py-3 px-6 hover:bg-red-900"
               onClick={handleLearnMoreClick}
             >

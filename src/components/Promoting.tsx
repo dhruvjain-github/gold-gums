@@ -19,7 +19,7 @@ const Promoting: React.FC<PromotingProps> = ({
   textcolor,
 }) => {
   return (
-    <div className={`${backgroundcolor} px-6 md:px-12 py-8`}>
+    <div className={`${backgroundcolor} px-6 md:px-12 py-8 lg27:px-64`}>
       {/* Left Section */}
       <div className="grid md:grid-cols-2 gap-8 items-center my-16">
         <div>
@@ -44,7 +44,7 @@ const Promoting: React.FC<PromotingProps> = ({
           </h1>
 
           {/* Description */}
-          <p className={`${textcolor} mb-8 leading-relaxed font-semibold`}>
+          <p className={`${textcolor} mb-8 leading-relaxed font-semibold lg27:text-lg`}>
             Choosing Gold Gums means investing in top-quality adhesive
             solutions that enhance your operations. With over two decades of
             industry experience, we guarantee reliability and excellence in
@@ -64,7 +64,7 @@ const Promoting: React.FC<PromotingProps> = ({
 
         {/* Right Section */}
         <div className="flex justify-center">
-          <div className="relative bg-orange-200 rounded-lg w-full h-[300px] md:h-[400px] overflow-hidden">
+          <div className="relative bg-orange-200 rounded-lg w-full h-[300px] md:h-[400px] overflow-hidden lg27:h-[500px]">
             <Image
               src={ggHero2}
               alt="Industrial Adhesive Solutions"

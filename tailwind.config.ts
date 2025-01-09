@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        lg27: '2560px', // Add a breakpoint for 27-inch screens
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
