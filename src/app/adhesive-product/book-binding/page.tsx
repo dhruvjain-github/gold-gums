@@ -20,7 +20,7 @@ const BookBindingAdhesivePage: React.FC = () => {
 
   const advantages = [
     "High initial tack. This will allow machine to run designed speed. This is important for formation of green bond.",
-    "Amylodex Corrugation Adhesive is carrier based formulation and gives very consistent viscosity. Viscosity behaviour in tank and tray are very predictable.",
+    "Our Corrugation Adhesive is carrier based formulation and gives very consistent viscosity. Viscosity behaviour in tank and tray are very predictable.",
     "Existing formulations are compatible to run 250 Mtr/ Min and tested at customers place at 210 Mtr/Min.",
     "100 % fiber tear on all the layers.",
     "Quick setting.",

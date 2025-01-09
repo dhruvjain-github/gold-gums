@@ -124,14 +124,14 @@ export const Footer: React.FC = () => {
       {/* Footer Bottom */}
       <div className="flex flex-col md:flex-row justify-between items-center border-t border-orange-300 pt-4">
         <p className="text-orange-900 font-semibold">© 2024 Gold Gums. All rights reserved.</p>
-        <div className="flex space-x-4 mt-4 md:mt-0">
+        {/* <div className="flex space-x-4 mt-4 md:mt-0">
           <Link href="/product" className="block text-orange-900">
             Privacy Policy
           </Link>
           <Link href="/product" className="block text-orange-900">
             Terms of Service
           </Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -23,7 +23,7 @@ const faqs: FAQ[] = [
   {
     question: "What is your shipping policy?",
     answer:
-      "We ship our products across India, ensuring timely delivery to all major cities.Shipping times may vary based on location. For specific inquiries, please reach out to our customer service team.",
+      "We ship our products across India, ensuring timely delivery to all major cities. Shipping times may vary based on location. For specific inquiries, please reach out to our customer service team.",
   },
   {
     question: "Do you offer samples?",
@@ -49,7 +49,7 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
   iconcolor,
   boxcolor,
 }) => {
-  const [openFaqs, setOpenFaqs] = useState<boolean[]>(faqs.map(() => true));
+  const [openFaqs, setOpenFaqs] = useState<boolean[]>(faqs.map(() => false)); // Initialize all FAQs as closed
 
   const toggleFaq = (index: number) => {
     setOpenFaqs((prev) =>
@@ -64,7 +64,8 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
           FAQs
         </h1>
         <p className={`mt-4 text-center ${textcolor}`}>
-          Find answers to your questions about our products, shipping, and more below.
+          Find answers to your questions about our products, shipping, and more
+          below.
         </p>
 
         <div className="mt-8 space-y-4">
@@ -72,7 +73,7 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
             <div
               key={index}
               className={`border border-gray-300 rounded-lg shadow-md transition-all ${
-                openFaqs[index] ? `p-4 ${boxcolor}` : "p-2 bg-white"
+                openFaqs[index] ? `p-4 ${boxcolor}` : "p-2 bg-orange-200"
               }`}
             >
               <div className="flex justify-between items-center">
@@ -102,14 +103,14 @@ const ContactFAQs: React.FC<ContactFAQsProps> = ({
           We&apos;re here to help you!
         </p>
         <div className="mt-4">
-        <a
-          href="https://wa.me/919826070900"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={` bg-red-800 text-white px-6 py-2 rounded-md shadow hover:opacity-80`}
-        >
-          Contact
-        </a>
+          <a
+            href="https://wa.me/919826070900"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`bg-red-800 text-white px-6 py-2 rounded-md shadow hover:opacity-80`}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>

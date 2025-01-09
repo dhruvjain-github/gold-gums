@@ -20,7 +20,7 @@ const SemiAutoAdhesivesPage = () => {
   //   "Our Corrugation Gum range is designed to handle the unique challenges faced by semi-automatic and manual corrugated board plants. These adhesives offer excellent bonding even in high moisture conditions, ensuring smooth operations and superior board quality.";
 
   const productInfo =
-    "Gold Gums Pvt. Ltd. provides high-performance adhesive powders tailored to meet the unique requirements of manual and semi-automatic plants. These adhesives are designed to handle challenges such as higher paper moisture, increased COBB values, and insufficient heating, ensuring reliable bonding and optimal board quality.";
+    "Gold Gums provides high-performance adhesive powders tailored to meet the unique requirements of manual and semi-automatic plants. These adhesives are designed to handle challenges such as higher paper moisture, increased COBB values, and insufficient heating, ensuring reliable bonding and optimal board quality.";
 
   const advantages = [
     "Provides excellent bonding even under high moisture conditions.",
