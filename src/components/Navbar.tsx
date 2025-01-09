@@ -101,12 +101,12 @@ export default function Navbar() {
             </li>
             <li className="hover:text-black text-gray-900 cursor-pointer py-2 font-semibold">
               <Link href="/about" onClick={() => setIsOpen(false)}>
-                About
+                About Us
               </Link>
             </li>
             <li className="hover:text-black text-gray-900 cursor-pointer py-2 font-semibold">
               <Link href="/contact" onClick={() => setIsOpen(false)}>
-                Contact
+                Contact Us
               </Link>
             </li>
           </ul>

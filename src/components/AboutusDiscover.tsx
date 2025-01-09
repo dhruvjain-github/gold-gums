@@ -16,7 +16,7 @@ const AboutusDiscover: React.FC<AboutusDiscoverProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col md:flex-row items-center justify-between py-12 px-6 lg:px-16 ${backgroundcolor}`}
+      className={`flex flex-col md:flex-row items-center justify-between py-12 px-6 lg:px-16 ${backgroundcolor} lg27:px-64 lg27:py-24`}
     >
       <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
       <h1 className={`text-4xl font-bold ${headingcolor}`}>

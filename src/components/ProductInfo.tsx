@@ -21,7 +21,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   applications = [], // Default to an empty array
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-10 md:py-20 gap-8">
+    <div className="flex flex-col md:flex-row items-start justify-between px-6 md:px-12 py-10 md:py-20 gap-8 lg27:px-64 ">
       {/* Text Section */}
       <div className="flex-1 max-w-3xl"> {/* Constrain the maximum width */}
         {/* Title and Description */}
@@ -29,7 +29,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
           <h1 className={`text-3xl md:text-4xl font-bold leading-tight ${headingcolor}`}>
             {title}
           </h1>
-          <p className={`mt-4 text-lg font-semibold ${textcolor} max-w-3xl`}>
+          <p className={`mt-4 text-lg font-semibold lg27:text-xl  ${textcolor} max-w-3xl`}>
             {description}
           </p>
         </div>
@@ -37,16 +37,16 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         {/* Advantages and Applications */}
         <div className="mt-8">
           <div className="mb-6">
-            <h3 className={`text-xl font-bold ${headingcolor}`}>Advantages</h3>
-            <ul className={`list-disc list-inside mt-2 ${textcolor}`}>
+            <h3 className={`text-xl lg27:text-2xl font-bold ${headingcolor}`}>Advantages</h3>
+            <ul className={`list-disc list-inside mt-2 lg27:text-lg ${textcolor}`}>
               {advantages.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className={`text-xl font-bold ${headingcolor}`}>Applications</h3>
-            <ul className={`list-disc font-semibold list-inside mt-2 ${textcolor}`}>
+            <h3 className={`text-xl font-bold lg27:text-2xl ${headingcolor}`}>Applications</h3>
+            <ul className={`list-disc font-semibold list-inside mt-2 ${textcolor} lg27:text-lg`}>
               {applications.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}

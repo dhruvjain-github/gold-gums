@@ -40,7 +40,7 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
   };
 
   return (
-    <div className={`p-3 md:px-10 md:py-20 ${backgroundcolor}`}>
+    <div className={`p-3 md:px-10 md:py-20 ${backgroundcolor} lg27:px-64`}>
       {/* Flex Container for Sidebar and Content */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         {/* Sidebar */}
@@ -59,7 +59,7 @@ const Productoverview: React.FC<ProductOverviewProps> = ({
           {/* Header Section */}
           <div className="mb-8">
             <h1 className={`text-4xl font-bold ${headingcolor}`}>{header}</h1>
-            <p className={`mt-4 ${textcolor} max-w-2xl font-semibold`}>{description}</p>
+            <p className={`mt-4 ${textcolor} lg27:text-lg  max-w-2xl font-semibold`}>{description}</p>
           </div>
 
           {/* Products Section */}

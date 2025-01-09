@@ -50,7 +50,7 @@ const Menu: React.FC<MenuProps> = ({
     : products.slice(0, Math.ceil(products.length / 2));
 
   return (
-    <div className={`${backgroundcolor} w-full py-5`}>
+    <div className={`${backgroundcolor} w-full py-10`}>
       {/* Heading */}
       <h1 className={`text-3xl font-bold text-center ${headingcolor} mb-6`}>
         Our Manufactured Products

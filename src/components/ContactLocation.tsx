@@ -44,7 +44,7 @@ const ContactLocation: React.FC<ContactLocationProps> = ({
 
   return (
     <section
-      className={`py-10 md:py-20 flex flex-col md:flex-row items-start justify-between gap-8 ${backgroundcolor} px-6 md:px-16`}
+      className={`py-10 md:py-20 flex flex-col md:flex-row items-start justify-between gap-8 ${backgroundcolor} px-6 md:px-16 lg27:px-64`}
     >
       {/* Locations Section */}
       <div className="w-full md:w-1/2">
@@ -118,9 +118,9 @@ const ContactLocation: React.FC<ContactLocationProps> = ({
         </div>
       </div>
 
+
       {/* Map Section */}
-      {/* Map Section */}
-<div className="w-full md:w-1/2">
+<div className="w-full md:w-1/2  lg:mt-12">
   <div
     className={`relative bg-gray-200 rounded-lg w-full h-64 md:h-[500px] ${boxcolor} shadow-md`}
   >

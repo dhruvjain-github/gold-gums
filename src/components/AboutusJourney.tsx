@@ -20,7 +20,7 @@ const AboutusJourney: React.FC<AboutusJourneyProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col lg:flex-row items-center justify-between ${backgroundcolor} px-6 lg:px-16 py-12  md:py-24 `}
+      className={`flex flex-col lg:flex-row items-center justify-between ${backgroundcolor} px-6 lg:px-16 py-12  md:py-24 lg27:px-64 `}
     >
       {/* Left Section: Text Content */}
       <div className="lg:w-1/2 space-y-6">

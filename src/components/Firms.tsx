@@ -44,7 +44,7 @@ const Firms: React.FC<FirmsProps> = ({
   ];
 
   return (
-    <div className={`${backgroundcolor} py-12 px-6 lg:px-16`}>
+    <div className={`${backgroundcolor} py-12 px-6 lg:px-16 lg27:px-64`}>
       <h1 className={`text-4xl font-bold text-left ${headingcolor} mb-8`}>
         Our Branches
       </h1>
@@ -65,7 +65,7 @@ const Firms: React.FC<FirmsProps> = ({
               <h2 className={`text-2xl font-bold ${headingcolor} mb-4`}>
                 {firm.headline}
               </h2>
-              <p className={`${textcolor} font-semibold`}>{firm.description}</p>
+              <p className={`${textcolor} font-semibold lg27:text-lg `}>{firm.description}</p>
             </div>
           </div>
         ))}

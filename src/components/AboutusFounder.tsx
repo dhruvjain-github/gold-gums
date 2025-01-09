@@ -35,7 +35,7 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
   ];
 
   return (
-    <div className={`px-6 md:px-12 py-10 md:py-20 ${backgroundcolor}`}>
+    <div className={`px-6 md:px-12 py-10 md:py-20 ${backgroundcolor} lg27:px-64`}>
       <h1 className={`text-3xl md:text-4xl font-bold ${headingcolor}`}>About Us</h1>
       <p className={`text-${textcolor} mt-4`}>
         Meet the dedicated professionals behind Gold Gums.
@@ -48,9 +48,9 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
           >
             {/* Information Section */}
             <div className="flex-1 text-center md:text-left">
-              <h3 className={`text-lg font-bold text-orange-950`}>{leader.name}</h3>
-              <h4 className={`text-sm font-semibold text-${textcolor}`}>{leader.position}</h4>
-              <p className={`text-gray-900 font-semibold mt-2`}>{leader.description}</p>
+              <h3 className={`text-lg font-bold text-orange-950 lg27:text-2xl ` }>{leader.name}</h3>
+              <h4 className={`text-sm font-semibold lg:mt-1 text-${textcolor}`}>{leader.position}</h4>
+              <p className={`text-gray-900 font-semibold mt-2 lg27:text-lg`}>{leader.description}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4"></div>
             </div>
 
