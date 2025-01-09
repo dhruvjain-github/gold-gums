@@ -67,7 +67,7 @@ const PaperTubeAdhesivesPage = () => {
   // ];
 
   return (
-    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>
+    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor} lg27:px-64 `}>
       {/* Flex Container for Sidebar and Content */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         {/* Sidebar */}

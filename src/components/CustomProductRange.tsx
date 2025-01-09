@@ -13,9 +13,9 @@ interface CustomProductRangeProps {
     textcolor: string;
     boxcolor: string;
   };
-}   
+}
 
-const CustomProductRange : React.FC<CustomProductRangeProps>= ({ styles }) => {
+const CustomProductRange: React.FC<CustomProductRangeProps> = ({ styles }) => {
   const products = [
     {
       category: "Cold Pesting Gum",
@@ -63,42 +63,12 @@ const CustomProductRange : React.FC<CustomProductRangeProps>= ({ styles }) => {
       <ul className="space-y-8">
         {products.map((product, index) => (
           <li key={index}>
-            <div
-              className={`p-4 rounded-md shadow-sm ${styles.backgroundcolor}`}
-            >
-              <h3 className={`text-3xl font-bold mb-6  ${styles.headingcolor}`}>
+            <div className={`p-4 rounded-md shadow-sm ${styles.backgroundcolor}`}>
+              <h3 className={`text-3xl lg27:text-4xl font-bold mb-6 ${styles.headingcolor}`}>
                 {product.category}
               </h3>
-              {product.category === "Hot Pesting Gum" ? (
-                <div className="relative w-full flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
-                  {/* Text on the left */}
-                  <div className="lg:w-1/2 text-center lg:text-left">
-                    {product.subProducts.map((subProduct, subIndex) => (
-                      <div key={subIndex} className="mb-4">
-                        <h4
-                          className={`text-xl font-bold ${styles.headingcolor}`}
-                        >
-                          {subProduct.name}
-                        </h4>
-                        <p className={`mt-2 font-semibold ${styles.textcolor}`}>
-                          {subProduct.description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                  {/* Image on the right */}
-                  <div className="absolute right-0 top-0 lg:relative lg:w-1/2 flex justify-end">
-                    <Image
-                      src={product.subProducts[0].imageSrc}
-                      alt={product.subProducts[0].name}
-                      className="w-80 h-[24rem] object-cover rounded-lg shadow-md"
-                      width={320}
-                      height={480}
-                    />
-                  </div>
-                </div>
-              ) : (
-                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {product.category === "Cold Pesting Gum" ? (
+                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {product.subProducts.map((subProduct, subIndex) => (
                     <li
                       key={subIndex}
@@ -111,17 +81,41 @@ const CustomProductRange : React.FC<CustomProductRangeProps>= ({ styles }) => {
                         width={320}
                         height={320}
                       />
-                      <h4
-                        className={`mt-4 text-xl font-bold ${styles.headingcolor}`}
-                      >
+                      <h4 className={`mt-4 text-xl font-bold ${styles.headingcolor} lg27:text-2xl`}>
                         {subProduct.name}
                       </h4>
-                      <p className={`mt-2 font-semibold ${styles.textcolor}`}>
+                      <p className={`mt-2 font-semibold lg27:text-lg ${styles.textcolor}`}>
                         {subProduct.description}
                       </p>
                     </li>
                   ))}
                 </ul>
+              ) : (
+                <div className="relative w-full flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
+                  {/* Text on the left */}
+                  <div className="lg:w-1/2 text-center lg:text-left">
+                    {product.subProducts.map((subProduct, subIndex) => (
+                      <div key={subIndex} className="mb-4">
+                        <h4 className={`text-xl font-bold ${styles.headingcolor}`}>
+                          {subProduct.name}
+                        </h4>
+                        <p className={`mt-2 font-semibold ${styles.textcolor} lg27:text-lg`}>
+                          {subProduct.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  {/* Image on the right */}
+                  <div className="lg:w-1/2 flex justify-center">
+                    <Image
+                      src={product.subProducts[0].imageSrc}
+                      alt={product.subProducts[0].name}
+                      className="max-w-full h-auto object-contain rounded-lg shadow-md"
+                      width={320}
+                      height={480}
+                    />
+                  </div>
+                </div>
               )}
             </div>
           </li>

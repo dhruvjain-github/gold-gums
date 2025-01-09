@@ -56,7 +56,7 @@ const PaperConeAdhesivesPage: React.FC = () => {
   ];
 
   return (
-    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>
+    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor} lg27:px-64`}>
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         <div className="md:w-auto">
           <ProductSideNavbar {...styles} />

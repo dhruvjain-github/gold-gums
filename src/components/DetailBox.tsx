@@ -26,8 +26,8 @@ const DetailBox: React.FC<DetailBoxProps> = ({ styles, description, advantages, 
           {description}
         </p>
         <div className={`${styles.backgroundcolor} p-4 rounded-lg shadow-inner mb-8`}>
-          <h3 className={`${styles.headingcolor} text-xl font-bold mb-2`}>Product Info</h3>
-          <p className={`${styles.textcolor} text-md font-medium`}>{productInfo}</p>
+          <h3 className={`${styles.headingcolor} text-xl lg27:text-2xl font-bold mb-2`}>Product Info</h3>
+          <p className={`${styles.textcolor} lg27:text-lg  text-md font-medium`}>{productInfo}</p>
         </div>
         <h3 className={`${styles.headingcolor} text-2xl font-bold mb-4`}>Advantages</h3>
         <ul className={`${styles.textcolor} list-disc pl-5 space-y-3 text-lg`}>
@@ -36,7 +36,7 @@ const DetailBox: React.FC<DetailBoxProps> = ({ styles, description, advantages, 
           ))}
         </ul>
       </div>
-      <div className="flex-shrink-0 h-64 w-48 md:h-80 md:w-60 rounded-lg overflow-hidden shadow-lg">
+      <div className="flex-shrink-0 h-64 w-48 md:h-80 md:w-60 lg27:h-1/2 lg27:w-1/4  lg27:mr-20  rounded-lg overflow-hidden shadow-lg">
         <Image src={imageSrc} alt="Adhesive Product" className="h-full w-full object-cover" width={400} height={400} />
       </div>
     </div>

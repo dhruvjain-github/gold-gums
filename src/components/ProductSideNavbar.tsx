@@ -11,7 +11,6 @@ interface ProductSideNavbarProps {
 
 const ProductSideNavbar: React.FC<ProductSideNavbarProps> = ({
   backgroundcolor,
-  iconcolor,
 
 }) => {
   return (
@@ -39,7 +38,7 @@ const ProductSideNavbar: React.FC<ProductSideNavbarProps> = ({
                 className={` px-4 py-2 text-orange-100 hover:text-orange-300 border-b-2 border-orange-300 flex justify-between items-center font-semibold`}
               >
                 <span>{product.name}</span>
-                <i className={`ri-arrow-right-s-line ${iconcolor} text-orange-300 `}></i>
+                <i className={`ri-arrow-right-s-line  text-orange-300 `}></i>
               </Link>
             </li>
           ))}

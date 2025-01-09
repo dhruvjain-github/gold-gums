@@ -56,7 +56,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       </div>
 
       {/* Image Section */}
-      <div className="w-full md:w-80 md:h-80 bg-gray-300 flex items-center justify-center rounded shadow-md border-2 border-orange-900">
+      <div className="w-full md:w-80 md:h-80 bg-gray-300 flex items-center justify-center rounded shadow-md border-2 border-orange-900 lg27:w-96 lg27:h-96">
         <Image
           src={imgLink}
           alt={title}

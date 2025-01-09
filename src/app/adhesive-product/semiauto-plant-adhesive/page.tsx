@@ -87,7 +87,7 @@ const SemiAutoAdhesivesPage = () => {
   // ];
 
   return (
-    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor}`}>
+    <div className={`p-3 md:px-10 md:py-20 ${styles.backgroundcolor} lg27:px-64`}>
       {/* Flex Container for Sidebar and Content */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10">
         {/* Sidebar */}
@@ -110,7 +110,7 @@ const SemiAutoAdhesivesPage = () => {
             </p>
 
             <span className="flex w-full ">
-              <h2 className="mt-8 text-5xl text-orange-200 font-bold bg-orange-900 inline-block px-4 py-2 rounded shadow mx-auto mb-2">
+              <h2 className="mt-8 text-3xl md:text-5xl text-orange-200 font-bold bg-orange-900 inline-block px-4 py-2 rounded shadow mx-auto mb-2">
                 PESTING GUM
               </h2>
             </span>
@@ -149,7 +149,7 @@ const SemiAutoAdhesivesPage = () => {
     <div className="mb-8">
 
       <span className="flex w-full">
-        <h2 className="mt-10 text-5xl text-orange-200 font-bold bg-orange-900 inline-block px-4 py-2 rounded shadow mx-auto mb-2">
+        <h2 className="mt-10 md:text-5xl text-3xl  text-orange-200 font-bold bg-orange-900 inline-block px-4 py-2 rounded shadow mx-auto mb-2">
           CORRUGATION GUM
         </h2>
       </span>
