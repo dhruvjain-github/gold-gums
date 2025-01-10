@@ -12,21 +12,24 @@ const BookBindingAdhesivePage: React.FC = () => {
     boxcolor: "bg-orange-200",
   };
 
+  
   const description =
-    "Auto Plant Corrugation Adhesive is completely different from Manual Plant Corrugation Powder. If Manual Corrugation Adhesives are used in Auto Plant, it would result in sub-optimal bonding. Most plants run on steam, and heat transfer to the board is very efficient. Auto Plants can use formulations based on Native Starch. However, Manual Plants need Modified Starch-based formulations. Auto plants can handle higher viscosity glues due to the availability of circulation systems. The 2-ply sheet is subject to reheating in the Double Backer, and bonding should not become brittle under the belt.";
+  "Book Binding Adhesives are specifically designed to meet the demands of modern bookbinding processes. These adhesives offer exceptional bonding strength, durability, and flexibility, ensuring that the books remain intact through extensive handling and usage. Whether for hardcover, softcover, or case binding applications, these adhesives cater to a wide range of binding needs.";
 
-  const productInfo =
-    "Consistency in viscosity is very crucial for smooth running of Auto Plant. Corrugation Adhesive viscosity must be consistent at mixing tank during the preparation and stable in the tray while running. Viscosity drop due to circulation is marginal ( 10-15%). Amylodex Corrugation Powder for auto plants are made from blend of modified and unmodified Maize Starch. Customers can get highly consistent product. One grade of adhesive can be used for Single Facer and Double Backer application. Viscosity would slightly drop in Single Facer and viscosity at Double Backer would remain same.";
+const productInfo =
+  "Our Book Binding Adhesives are developed using advanced formulations to provide consistent performance across various bookbinding techniques. They ensure a strong initial tack and quick setting, making them ideal for high-speed binding machines. With excellent adhesion properties, these adhesives are compatible with different types of paper, covers, and binding equipment. Additionally, they maintain flexibility, ensuring the books can be opened flat without compromising the spine's strength. These adhesives are eco-friendly and compatible with waterproof resins for enhanced durability.";
+
 
   const advantages = [
-    "High initial tack. This will allow machine to run designed speed. This is important for formation of green bond.",
-    "Our Corrugation Adhesive is carrier based formulation and gives very consistent viscosity. Viscosity behaviour in tank and tray are very predictable.",
-    "Existing formulations are compatible to run 250 Mtr/ Min and tested at customers place at 210 Mtr/Min.",
-    "100 % fiber tear on all the layers.",
-    "Quick setting.",
-    "Compatible with waterproof resins.",
-    "Compatible with waterproof resins."
+    "Strong initial tack ensures efficient and reliable binding, even at high speeds.",
+    "Formulated for consistent viscosity, providing predictable performance across various bookbinding machines.",
+    "Quick setting properties reduce production time and enhance workflow efficiency.",
+    "Excellent flexibility, ensuring books can open flat without compromising the spine’s integrity.",
+    "Compatible with a wide range of paper and cover materials, including glossy and textured surfaces.",
+    "Eco-friendly and free from harmful chemicals, making it safe for users and the environment.",
+    "Water-resistant properties for enhanced durability and protection against moisture.",
   ];
+  
 
   // const imageSrc = "https://content.jdmagicbox.com/quickquotes/images_main/fotd-50-ltr-374076396-3wtm5.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"; // Replace with your actual image path
 
