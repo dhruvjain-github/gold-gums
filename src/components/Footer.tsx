@@ -58,14 +58,14 @@ export const Footer: React.FC = () => {
             {/* Social Media Icons */}
             <div className="flex space-x-4">
               {/* Facebook */}
-              <Link
+              {/* <Link
                 href="https://www.facebook.com/profile.php?id=100001766817110"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
                 <i className="ri-facebook-box-fill text-2xl text-orange-950"></i>
-              </Link>
+              </Link> */}
 
               {/* LinkedIn */}
               <Link
