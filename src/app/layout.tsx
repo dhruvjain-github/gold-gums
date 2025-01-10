@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GoldGums",
-  description: "created by Dhruv Jain ",
+  // title: "GoldGums",
+  // description: "created by Dhruv Jain ",
   
 };
 
