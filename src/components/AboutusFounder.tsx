@@ -29,7 +29,7 @@ const AboutusFounder: React.FC<AboutusFounderProps> = ({
       name: "Er. Abhishek Jain",
       position: "Director",
       description:
-        "Abhishek Jain, an Engineering graduate from 2000, has more than two decades of experience in adhesive manufacturing. He has successfully led the brand for the past 25 years, driving innovation and excellence in the industry.",
+        "Abhishek Jain, an Engineering graduate since 2000, has more than two decades of experience in adhesive manufacturing. He has successfully led the brand for the past 25 years, driving innovation and excellence in the industry.",
       image: Abhishek_jain, // Use imported image here
     },
   ];
