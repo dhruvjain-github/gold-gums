@@ -30,7 +30,7 @@ export default function RootLayout({
       <title>GoldGums</title>
       <meta name="description" content="created by Dhruv Jain" />
       {/* Link to your favicon */}
-      <link rel="icon" href="/Fav.ico" type="image/svg+xml" />
+      <link rel="icon" href="/Fav.ic" type="image/svg+xml" />
       </head>
     <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased `}

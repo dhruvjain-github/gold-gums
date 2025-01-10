@@ -24,7 +24,6 @@ const SemiAutoAdhesivesPage = () => {
 
   const advantages = [
     "Provides excellent bonding even under high moisture conditions.",
-    "Dries boards in less than 30 minutes under optimal conditions.",
     "Maintains consistent viscosity and initial tack for smooth operations.",
     "Compatible with higher COBB values and moisture levels.",
     "Low energy consumption, enhancing efficiency.",

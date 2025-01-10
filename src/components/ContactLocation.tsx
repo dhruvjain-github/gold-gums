@@ -25,12 +25,12 @@ const ContactLocation: React.FC<ContactLocationProps> = ({
   const locations: Location[] = [
     {
       name: "Industry",
-      address: "Lahdara Bhopal road Sagar, Mp 470001 In",
+      address: "Lahdara Bhopal road Sagar, MP 470001 In",
       map: "https://maps.google.com/maps?q=23.826643,78.6892778&z=15&output=embed",
     },
     {
       name: "Office",
-      address: "Chameli Chouk Sagar, Mp 470002 In",
+      address: "Chameli Chouk Sagar, MP 470002 In",
       map: "https://maps.google.com/maps?q=23.8376625,78.7310156&z=15&output=embed",
     },
   ];
