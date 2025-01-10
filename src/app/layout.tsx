@@ -32,7 +32,7 @@ export default function RootLayout({
       <meta name="description" content="created by Dhruv Jain" />
       {/* Link to your favicon */}
       <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    </head>
+      </head>
     <body
       className={`${geistSans.variable} ${geistMono.variable} antialiased `}
     >
