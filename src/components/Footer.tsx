@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
               <p className="font-bold text-black">Address:</p>
               <div className="flex items-center gap-2">
                 <i className="ri-building-fill text-orange-950"></i>
-                <p className="font-semibold">Lahdara Bhopal road Sagar, MP (470001)</p>
+                <p className="font-semibold">Lahdara Bhopal Road Sagar, MP (470001)</p>
               </div>
               <div className="flex items-center gap-2">
                 <i className="ri-home-office-fill text-orange-950"></i>

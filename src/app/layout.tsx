@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GoldGums",
-  description: "created by Dhruv Jain ",
+  title: "Gold Gums",
+  description: "Gold Gums is a leading manufacturer of industrial adhesives and food products.",
+  // Removed the icons property
 };
 
 export default function RootLayout({
@@ -26,19 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-      <title>GoldGums</title>
-      <meta name="description" content="created by Dhruv Jain" />
-      {/* Link to your favicon */}
-      <link rel="icon" href="/Fav.ic" type="image/svg+xml" />
-      </head>
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-    >
-      <Navbar />
-      {children}
-      <Footer />
-    </body>
-  </html>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
