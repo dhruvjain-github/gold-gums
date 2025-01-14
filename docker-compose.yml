@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .  # Directory containing the Dockerfile
+    image: gold-gums:v1.0  # Use a versioned image name
+    container_name: gold-gums-prod-1  # Give the container a distinct name
+    working_dir: /src/app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/src/app
+      - /src/app/node_modules
+    environment:
+      NODE_ENV: production
+    command: ["sh", "-c", "npm run build && npm run start"]
